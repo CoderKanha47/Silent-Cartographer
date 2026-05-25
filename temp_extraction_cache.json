@@ -1,0 +1,36 @@
+{
+  "batchId": "btc_sh_mum_001",
+  "timestamp": "2026-05-22T09:18:00Z",
+  "extractions": [
+    {
+      "fileName": "customs_clearance_shenghai.txt",
+      "documentType": "customs_declaration",
+      "extractedData": {
+        "grossWeight": 1240.00,
+        "fobValue": null,
+        "hsCode": "8528.59.00",
+        "routingPoint": "Shanghai"
+      }
+    },
+    {
+      "fileName": "sample_shenghai_mumbai_invoice.txt",
+      "documentType": "commercial_invoice",
+      "extractedData": {
+        "grossWeight": 1240.00,
+        "fobValue": 14250.00,
+        "hsCode": "8528.59.00",
+        "routingPoint": "Shanghai"
+      }
+    },
+    {
+      "fileName": "customs_clearance_mumbai.txt",
+      "documentType": "entry_bill",
+      "extractedData": {
+        "grossWeight": 1420.00, 
+        "fobValue": 12500.00,
+        "hsCode": "8528.59.00",
+        "routingPoint": "Mumbai"
+      }
+    }
+  ]
+}

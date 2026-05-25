@@ -1,0 +1,38 @@
+========================================================================
+PACKING LIST / SPECIFICATION SHEET
+========================================================================
+PACKING LIST NO: VNM-PL-9934A                     DATE: May 15, 2026
+ASSOCIATED INVOICE REFERENCE: VNM-2026-9934A
+PURCHASE ORDER NO: PO-TRUSOUNDS-2026-08
+
+SHIPPER: VinaAudio Manufacturing Corp., Hanoi, Vietnam
+CONSIGNEE: truSounds Audio Pvt. Ltd., Howrah, West Bengal, India
+
+------------------------------------------------------------------------
+CONTAINER & PACKAGING BREAKDOWN
+------------------------------------------------------------------------
+CONTAINER NUMBER: ICMT-9948215
+BOLT SEAL NUMBER: SG-VN883492
+CARRIER: Indo-China Maritime Transport Ltd.
+
+Pallet ID    Crates Per Pallet    Units Per Crate    Total Units   Net Wt (KG)   Gross Wt (KG)
+---------    -----------------    ---------------    -----------   -----------   -------------
+PLT-01       9 Crates             100 Units          900 Units     760.00        830.00
+PLT-02       9 Crates             100 Units          900 Units     760.00        830.00
+PLT-03       9 Crates             100 Units          900 Units     760.00        830.00
+PLT-04       9 Crates             100 Units          900 Units     760.00        830.00
+PLT-05       9 Crates             100 Units          900 Units     760.00        830.00
+---------    -----------------    ---------------    -----------   -----------   -------------
+TOTALS       45 Crates            -                  4,500 Units   3,800.00 KG   4,150.00 KG
+
+------------------------------------------------------------------------
+DIMENSIONAL SUMMARY
+------------------------------------------------------------------------
+Total Package Count: 45 Industrial Crates on 5 Pallets
+Total Cubic Measurement: 14.85 CBM
+Packaging Type: Heavy-Duty Heat-Treated Wooden Pallets & Slatted Crates
+Inner Protection: Layered Vacuum-Sealed Anti-Static Polymer Wrapping
+
+VERIFIED AND STAMPED BY LOGISTICS DEPT:
+VinaAudio Dispatch Hub - Haiphong Node Terminal
+========================================================================

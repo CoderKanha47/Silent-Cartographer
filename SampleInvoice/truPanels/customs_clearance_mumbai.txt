@@ -1,0 +1,50 @@
+================================================================================
+                    INDIAN CUSTOMS / MUMBAI AIR CARGO COMPLEX
+================================================================================
+ENTRY BILL NO  : BOE-2026-440192                     ENTRY DATE : May 20, 2026
+IGM NO / LINE  : IGM-993012 / L-44                   IEC NUMBER : 0319204921
+--------------------------------------------------------------------------------
+PORT OF ENTRY  : Mumbai Air Cargo (INBOM4)
+ORIGIN COUNTRY : China (CN)
+PORT OF LADING : Shanghai Pudong (PVG) via Transit Track
+MANIFEST LINK  : MNF-2026-79F5
+
+IMPORTER / CONSIGNEE:
+  Aegis Supply Chain Solutions Pvt. Ltd.
+  Terminal 2 Logistics Yard, Sahar Cargo Complex
+  Andheri East, Mumbai, MH 400099
+  India
+
+CUSTOMS BROKER / AGENT:
+  Aegis Cleardesk Gateway India
+  Sahar Customs House, Cabin 12B
+  Mumbai, India
+--------------------------------------------------------------------------------
+ASSESSMENT PARAMETERS & INLINE VERIFICATION
+--------------------------------------------------------------------------------
+ITEM  HS CODE     GOODS / ASSESSED DESCRIPTION      QTY (U)   DECLARED VALUE
+--------------------------------------------------------------------------------
+01    8528.59.00  15.6 Inch Thin Film LED Display   500 NOS   $12,500.00 USD
+                  Panels (Industrial Components)
+
+02    8504.40.95  Solid-State Display Inverter       250 NOS   $1,750.00 USD
+                  Board Modules
+
+--------------------------------------------------------------------------------
+CONSIGNMENT PARAMETERS FOR CONSENSUS EVALUATION:
+--------------------------------------------------------------------------------
+GROSS WEIGHT DECLARED : 1,420.00 KG  <-- [WARNING: COUNTER-REF MISMATCH AT GATEWAY]
+GROSS WEIGHT EXPECTED : 1,240.00 KG
+--------------------------------------------------------------------------------
+DUTY CALCULATIONS (INR EQUIVALENT):
+- ASSESSABLE VALUE     : INR 1,197,000.00
+- BASIC CUSTOMS DUTY   : INR 119,700.00 (10%)
+- SOCIAL WELFARE SURCH : INR 11,970.00  (10% of BCD)
+- INTEGRATED GST (IGST): INR 239,400.00 (18%)
+--------------------------------------------------------------------------------
+CURRENT ASSESSMENT STATUS : HELD_FOR_PHYSICAL_AUDIT
+AUDIT TRIGGER FACTOR     : WEIGHT_DISCREPANCY_DETECTED (+180.00 KG INDUCTION)
+================================================================================
+OFFICIAL LOG / RECORD END
+>>> SAHAR AIR CARGO AUTHORITY -- EDI RISK MANAGEMENT GATEWAY SYSTEM <<<
+================================================================================

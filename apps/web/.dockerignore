@@ -1,0 +1,17 @@
+# Block all root and nested dependencies
+**/node_modules
+node_modules/
+apps/web/node_modules/
+
+# Block all build caches
+**/.next
+.next/
+apps/web/.next/
+out/
+build/
+
+# System and logs
+.git
+.gitignore
+*.log
+.DS_Store

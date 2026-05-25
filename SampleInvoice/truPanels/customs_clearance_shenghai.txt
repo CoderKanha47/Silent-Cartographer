@@ -1,0 +1,50 @@
+================================================================================
+                      SHANGHAI (SHENGHAI) CUSTOMS DECLARATION
+================================================================================
+DECLARATION NO : DEC-2026-99214                      RELEASE DATE: May 20, 2026
+EXPORT LIC NO  : EXP-SH-883210-C                     DECLARANT CODE: 31220491X
+--------------------------------------------------------------------------------
+DECLARANT / AGENT:
+  ShengHai Logistics Forwarding Group
+  Customs Warehouse Deck #4, Shanghai Deepwater Port
+  Shanghai (ShengHai), China
+
+CONSIGNOR (EXPORTER):
+  ShengHai Optoelectronics Ltd.
+  Industrial Development Zone, Building B7
+  Shanghai (ShengHai), China
+
+CONSIGNEE (IMPORTER):
+  Aegis Supply Chain Solutions Pvt. Ltd.
+  Terminal 2 Logistics Yard, Sahar Cargo Complex
+  Andheri East, Mumbai, MH 400099, India
+--------------------------------------------------------------------------------
+TRANSPORT MODE    : Sea Freight (Ocean Cargo)
+PORT OF EXIT      : Shanghai Port (CNSHA)
+COUNTRY OF DEST.  : India (IN)
+MANIFEST BIND ID  : MNF-2026-79F5
+--------------------------------------------------------------------------------
+
+LINE  HS CODE       GOODS DESCRIPTION             NET MASS (KG)  DECLARED (USD)
+--------------------------------------------------------------------------------
+01    8528.59.00    15.6" LED Display Panels      1,100.00 KG    $12,500.00
+                    (Thin Film Transistor)
+                     
+02    8504.40.95    Display Panel Inverter Boards   140.00 KG     $1,750.00
+                    Modules (Solid-State)
+
+--------------------------------------------------------------------------------
+TOTAL PACKAGES    : 12 INDUSTRIAL CRATES
+TOTAL GROSS MASS  : 1,240.00 KG 
+TOTAL NET MASS    : 1,240.00 KG
+--------------------------------------------------------------------------------
+APPROVED STATUS   : STATUS_CLEARED_FOR_EXPORT
+VERIFICATION TAG  : CONSENSUS_MATCH_OK
+CUSTOMS INSPECTION: BYPASSED (AI-AUTOMATED RISK SCORE: 0.02)
+--------------------------------------------------------------------------------
+                                         DECLARED FOB VALUE:     $14,250.00
+================================================================================
+OFFICIAL STAMP / DIGITAL SIGNATURE:
+>>> SHANGHAI PORT CUSTOMS AUTHORITY - AUTOMATED EXPORT CLEARANCE ENGINE <<<
+>>> DIGITAL TOKEN HASH: 9a7f21b8c6e3d5a4f7e2b1c0a8e9f4d3 <<<
+================================================================================

@@ -1,0 +1,19 @@
+========================================================
+GLOBAL TRANSIT ROUTING MANIFEST
+========================================================
+Master Consignment Ref  : BCH-SH-ROT-8890
+Container ID            : COSU9921840
+Carrier Route Code      : AS-EU-4471
+
+TRANSIT EVENT LOG
+--------------------------------------------------------
+2026-05-24 09:30 CST | CNSHA CHECK-IN: PASS
+2026-05-28 14:15 UTC | MALACCA STRAIT TRANSIT: RECORDED
+2026-06-09 06:40 CET | NLRTM ARRIVAL SCANNERS: PASS
+
+ROUTING STATUS
+--------------------------------------------------------
+Transit Integrity       : MAINTAINED
+Seal Breach Alerts      : NONE
+Route Compliance        : VERIFIED
+========================================================

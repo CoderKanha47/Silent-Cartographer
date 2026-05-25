@@ -1,0 +1,56 @@
+========================================================================
+COMMERCIAL INVOICE
+========================================================================
+INVOICE NUMBER: FMT-2026-8841X           DATE: May 21, 2026
+PAYMENT TERMS: Telegraphic Transfer (TT Wire)     INCOTERMS: CIF PARADIP
+
+EXPORTER (SELLER):
+Formosa Drone Tech Corp.
+No. 88, Jianguo N. Rd, Sec 2,
+Taipei, Taiwan
+Registration No: TW-88491024
+
+IMPORTER (BUYER):
+flyHigh Hobby Club India
+Link Road, Cuttack, Odisha,
+Pin-753012, India
+IEC No: 1215099431
+
+------------------------------------------------------------------------
+ITEM DESCRIPTION & TARIFF SPECIFICATION
+------------------------------------------------------------------------
+Line Item: 01
+Product Description: RC Helicopters (4-Channel Coaxial Stability Drive)
+Quantity: 50 Units  |  Unit Price: USD 45.00  |  Total: USD 2,250.00
+Harmonized System Tariff Code (HS CODE): 9503.00.30
+
+Line Item: 02
+Product Description: RC Cars (1:16 Scale All-Terrain Crawler Assembly)
+Quantity: 50 Units  |  Unit Price: USD 25.00  |  Total: USD 1,250.00
+Harmonized System Tariff Code (HS CODE): 9503.00.30
+
+Line Item: 03
+Product Description: RC Cars - HighSpeed (Brushless Motor Pro-Racing Drift Variant)
+Quantity: 25 Units  |  Unit Price: USD 60.00  |  Total: USD 1,500.00
+Harmonized System Tariff Code (HS CODE): 9503.00.30
+
+------------------------------------------------------------------------
+FINANCIAL SUMMARY
+------------------------------------------------------------------------
+TOTAL TRANSACTION VALUE: USD 5,000.00
+SAY: Five Thousand US Dollars Only
+
+------------------------------------------------------------------------
+SHIPPING SPECIFICATIONS
+------------------------------------------------------------------------
+Total Packages: 15 Heavy-Duty Corrugated Outer Master Crates on 2 Plastic Pallets
+Net Mass: 420.00 KG
+Gross Mass: 510.00 KG
+Container Bound: FMSC-4451092
+Country of Origin: Taiwan (TW)
+
+AUTHORIZED SIGNATORY
+For Formosa Drone Tech Corp.
+[Chen Wei-Ting]
+Global Logistics Desk Manager
+========================================================================

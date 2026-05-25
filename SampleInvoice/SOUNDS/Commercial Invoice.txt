@@ -1,0 +1,32 @@
+========================================================================
+COMMERCIAL INVOICE // GLOBAL LOGISTICS DISPATCH RECORD
+========================================================================
+INVOICE NO: CI-2026-9941A
+DATE OF EXPORT: 2026-05-18
+EXPORTER OF RECORD: Shenzhen Quantum Optics Manufacturing, Block G, Tech Park, CN
+CONSIGNEE: EuroGlow Retail Logistics GmbH, Hamburg, DE
+
+------------------------------------------------------------------------
+SHIPPING TELEMETRY & ROUTING MANIFEST:
+------------------------------------------------------------------------
+PORT OF LOADING (UN/LOCODE): CNTXG
+PORT OF DISCHARGE (UN/LOCODE): DEHAM
+MODE OF TRANSPORT: MARITIME CONTAINER VESSEL
+CONTAINER ID: TGBU-882104-5
+SEAL NUMBER: SL-994102
+
+------------------------------------------------------------------------
+LINE-ITEM CARGO BREAKDOWN:
+------------------------------------------------------------------------
+ITEM  | HARMONIZED SYSTEM | PRODUCT DESCRIPTION         | NET VALUE (EUR)
+01    | HS.8541.41.00     | SOLID STATE DIODE LASERS     | 42,500.00
+02    | HS.8543.70.90     | OPTICAL AMPLIFIER MODULES    | 18,200.00
+
+------------------------------------------------------------------------
+QUANTITY & MASS SUMMARY:
+------------------------------------------------------------------------
+TOTAL QUANTITY SHIPPED: 1,200 UNITS
+GROSS WEIGHT: 4850.0 KG
+NET WEIGHT: 4610.0 KG
+FOB VALUE TOTAL: 60700.00 EUR
+========================================================================

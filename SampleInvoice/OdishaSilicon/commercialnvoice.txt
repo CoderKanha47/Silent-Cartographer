@@ -1,0 +1,55 @@
+================================================================================
+                           COMMERCIAL INVOICE
+================================================================================
+INVOICE NO   : INV-2026-88491                      DATE       : May 18, 2026
+PURCHASE ORD : PO-AEGIS-2026-094                   PAYMENT TERM: FOB TIANJIN
+LETTER OF CR : LC-330912440                        CURRENCY   : USD ($)
+--------------------------------------------------------------------------------
+
+SELLER / EXPORTER:
+  ShengHai Optoelectronics Ltd.
+  Industrial Development Zone, Building B7
+  Tianjin (Xingang), China
+  Email: logistics@shenghai-opto.cn
+
+BUYER / IMPORTER:
+  Odisha Silicon Tech
+  Bhubaneswar Industrial Estate
+  Bhubaneswar, Odisha 751024
+  India
+
+CONSIGNEE:
+  Aegis Supply Chain Solutions Pvt. Ltd.
+  Terminal 2 Logistics Yard, Sahar Cargo Complex
+  Andheri East, Mumbai, MH 400099, India
+--------------------------------------------------------------------------------
+PORT OF LOADING   : TIANJIN PORT (CNTXG), CHINA
+PORT OF DISCHARGE : MUMBAI AIR CARGO ACC (INBOM1), INDIA
+SHIPPING MANIFEST : MNF-2026-69F69
+--------------------------------------------------------------------------------
+LINE  HS CODE       DESCRIPTION OF GOODS            QTY (U)   UNIT ($)   TOTAL ($)
+--------------------------------------------------------------------------------
+01    5510.55.00    ARM X86 Chips                   100 U     $120.00    $12,000.00
+                    S.No AV154 (Industrial Grade)
+
+02    5511.56.95    ARM X86 Chips                   10 U      $500.00    $5,000.00
+                    S.No AX1100 (Low Power)
+
+--------------------------------------------------------------------------------
+TOTAL QUANTITY    : 110 UNITS
+PACKAGING DETAILS : 12 INDUSTRIAL CRATES (SECURED MANIFEST REINFORCED)
+NET WEIGHT TOTAL  : 1,240.00 KG
+GROSS WEIGHT TOTAL: 1,240.00 KG
+--------------------------------------------------------------------------------
+BANKING & REMITTANCE DETAILS:
+- BENEFICIARY BANK : BANK OF CHINA, TIANJIN DEEPWATER PORT BRANCH
+- SWIFT CODE       : BKCHCNBJ300
+- ACCOUNT NUMBER   : 4401-9923-0491-X
+- REMITTANCE REF   : REF-SH-2026-883210
+--------------------------------------------------------------------------------
+                                              TOTAL FOB VALUE : $17,000.00
+================================================================================
+AUTHORIZED SIGNATURE & COMPANY SEAL:
+ShengHai Optoelectronics Ltd. (Export Division)
+>>> VERIFIED ELECTRONIC DOCUMENT // SECURE TRANSACTION RECORD <<<
+================================================================================

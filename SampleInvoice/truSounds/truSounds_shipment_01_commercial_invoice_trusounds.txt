@@ -1,0 +1,45 @@
+========================================================================
+COMMERCIAL INVOICE
+========================================================================
+INVOICE NUMBER: VNM-2026-9934A           DATE: May 15, 2026
+PAYMENT TERMS: Letter of Credit (LC #99281140)    INCOTERMS: FOB HAIPHONG
+
+EXPORTER (SELLER):
+Vietnam Audio Manufacturing Corp. (VinaAudio)
+Lot 12, Quang Minh Industrial Zone, Mê Linh,
+Hanoi, Vietnam
+Registration No: VN-11048291A
+
+IMPORTER (BUYER):
+truSounds Audio Pvt. Ltd.
+Howrah Industrial Complex, Block P-1,
+Howrah, West Bengal, Pin-711101, India
+IEC No: 0314099231
+
+------------------------------------------------------------------------
+ITEM DESCRIPTION & TARIFF SPECIFICATION
+------------------------------------------------------------------------
+Line Item: 01
+Product Description: Neodymium Subwoofer Driver Units (12-inch, Core Assembly)
+Model Reference: TS-SUB-12X
+Harmonized System Tariff Code (HS CODE): 8518.29.00
+
+Quantity: 4,500 Units
+Unit Price: USD 14.50
+TOTAL INVOICE VALUE: USD 65,250.00
+Say: Sixty-Five Thousand Two Hundred and Fifty US Dollars Only
+
+------------------------------------------------------------------------
+SHIPPING SPECIFICATIONS
+------------------------------------------------------------------------
+Total Packages: 45 Industrial Crates on 5 Pallets
+Net Weight (Net Mass): 3,800.00 KG
+Gross Weight (Gross Mass): 4,150.00 KG
+Container Allocation: ICMT-9948215
+Country of Origin: Vietnam
+
+AUTHORIZED SIGNATORY
+For Vietnam Audio Manufacturing Corp.
+[Nguyen Van Thang]
+Export Operations Director
+========================================================================

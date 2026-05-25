@@ -1,0 +1,37 @@
+========================================================================
+PACKING LIST / SPECIFICATION SHEET
+========================================================================
+PACKING LIST NO: FMT-PL-8841X                     DATE: May 21, 2026
+INVOICE TRACKING REF: FMT-2026-8841X
+PURCHASE ORDER NO: PO-FLYHIGH-2026-012
+
+SHIPPER: Formosa Drone Tech Corp., Taipei, Taiwan
+CONSIGNEE: flyHigh Hobby Club India, Cuttack, Odisha, India
+
+------------------------------------------------------------------------
+ITEMIZED PACKAGING BREAKDOWN
+------------------------------------------------------------------------
+CONTAINER NUMBER: FMSC-4451092
+BOLT SEAL ID: TW-SEAL-77128
+CARRIER: Formosa Sea Carrier Ltd.
+
+Pallet ID  Crate ID    Contents Description                     Units   Gross Wt
+---------  --------    --------------------                     -----   --------
+PLT-01     CRT-01~06   RC Helicopters (Coaxial Drive)           50      190.00 KG
+PLT-01     CRT-07~10   RC Cars (1:16 Scale Crawler)             50      160.00 KG
+PLT-02     CRT-11~15   RC Cars - HighSpeed (Brushless Drift)   25      160.00 KG
+---------  --------    --------------------                     -----   --------
+TOTALS     15 Crates                                            125     510.00 KG
+
+------------------------------------------------------------------------
+DIMENSIONAL SUMMARY
+------------------------------------------------------------------------
+Total Packaging Footprint: 15 Heavy-Duty Corrugated Outer Master Crates on 2 Plastic Pallets
+Total Net Weight Volume: 420.00 KG
+Total Gross Weight Volume: 510.00 KG
+Cubic Volume Metric: 4.25 CBM
+Outer Material: Heavy-Duty Double-Wall Corrugated Master Board Boxes
+
+VERIFIED AND LOADED BY DISPATCH:
+Formosa Drone Tech Shipping Bay 04, Keelung Terminal Node
+========================================================================

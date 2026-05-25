@@ -1,0 +1,39 @@
+===================================================================
+GUJARAT PORT CUSTOMS & MARITIME BOARD
+MUNDRA TERMINAL, STATE OF GUJARAT, INDIA
+===================================================================
+ENTRY BILL OF ENTRY / MANIFEST UNDER SECT 46
+
+Manifest ID: IN-MND-QA-0883
+Arrival Date: May 22, 2026
+Linked Batch Ref: BATCH-QA-GJ-04
+
+VESSEL CALL SIGN: MT AL-TRAFALGAR (IMO: 9432105)
+COUNTRY OF ORIGIN: Qatar (QA)
+PORT OF REGISTRY: Doha
+
+-------------------------------------------------------------------
+OFFICIAL DISCHARGE INSPECTION MATRIX:
+-------------------------------------------------------------------
+Declared Commodity: Crude Petroleum Oil
+UN Hazard Classification: Class 3 (Flammable Liquid)
+UN Material Identifier: UN 1267
+Customs Surveyor Flash Point Measurement: 24°C
+
+-------------------------------------------------------------------
+RECONCILIATION EXTRACTION TARGETS:
+-------------------------------------------------------------------
+Gross Weight at Port Scales: 73,350.00 Metric Tons (MT)
+FOB Value Declared (Customs): $41,250,000.00 USD
+Import HS Code Designation: 2709.00.00
+
+-------------------------------------------------------------------
+LOGISTICS ROUTING TRACK:
+-------------------------------------------------------------------
+Origin Point: Mesaieed Port, Qatar
+Discharge Point: Gujarat Port Gateway, India
+
+===================================================================
+Clearance Officer Seal: R. K. Patel
+Gujarat Port Maritime Customs Desk
+===================================================================

@@ -1,0 +1,27 @@
+########################################################
+CONTAINER PACKING SCHEDULE
+########################################################
+Associated Invoice     : INV-THERM-991
+Master Consignment Ref : BCH-SH-ROT-8890
+
+Product Description    : Liquid Cooling Manifolds
+HS Commodity Code      : 8419.50
+
+REINFORCED CASE BREAKDOWN
+--------------------------------------------------------
+| Case ID | Package Type      | Gross Weight |
+|---------|-------------------|--------------|
+| RC-01   | Reinforced Case   | 1250.00 KG   |
+| RC-02   | Reinforced Case   | 1250.00 KG   |
+| RC-03   | Reinforced Case   | 1250.00 KG   |
+| RC-04   | Reinforced Case   | 1250.00 KG   |
+| RC-05   | Reinforced Case   | 1250.00 KG   |
+| RC-06   | Reinforced Case   | 1250.00 KG   |
+| RC-07   | Reinforced Case   | 1250.00 KG   |
+| RC-08   | Reinforced Case   | 1250.00 KG   |
+
+SUMMARY
+--------------------------------------------------------
+Total Reinforced Cases : 8
+Total Gross Weight     : 10,000.00 KG
+########################################################

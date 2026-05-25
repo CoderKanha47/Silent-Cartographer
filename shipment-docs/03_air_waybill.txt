@@ -1,0 +1,12 @@
+==================================================
+             INTERNATIONAL AIR WAYBILL (AWB)
+==================================================
+AWB NUMBER: AWB-8871-0294
+ASSOCIATED INVOICE: INV-SZ-DEL-99201
+CARRIER: Cathay Pacific Cargo
+
+SHIPMENT DETAILS:
+- Gross Weight: 2,200 kg
+- Total Pallets: 4 Pallets (Containing 10,000 Electronic Units)
+FLIGHT: CX-029 FROM: Shenzhen (SZX) TO: Delhi (DEL)
+==================================================

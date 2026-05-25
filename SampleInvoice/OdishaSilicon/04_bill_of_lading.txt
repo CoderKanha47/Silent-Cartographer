@@ -1,0 +1,50 @@
+================================================================================
+                               BILL OF LADING
+================================================================================
+B/L NUMBER     : BL-TXGMUM-2026-44109               DATE: May 19, 2026
+SHIPPING LINE  : Pacific Gateway Intermodal (PGI)  VESSEL/VOYAGE: PACIFIC_MARINER / V-06
+MANIFEST REF   : MNF-2026-69F69                     BOOKING NO  : BKG-9930214
+--------------------------------------------------------------------------------
+
+SHIPPER (CONSIGNOR):
+  ShengHai Optoelectronics Ltd.
+  Industrial Development Zone, Building B7
+  Tianjin (Xingang), China
+
+CONSIGNEE (IMPORTER):
+  Odisha Silicon Tech
+  Bhubaneswar Industrial Estate
+  Bhubaneswar, Odisha 751024, India
+
+NOTIFY PARTY:
+  Aegis Supply Chain Solutions Pvt. Ltd.
+  Terminal 2 Logistics Yard, Sahar Cargo Complex
+  Andheri East, Mumbai, MH 400099, India
+--------------------------------------------------------------------------------
+PORT OF LOADING   : TIANJIN PORT (CNTXG), CHINA
+PORT OF DISCHARGE : MUMBAI PORT (INBOM1), INDIA
+PLACE OF DELIVERY : MUMBAI AIR CARGO COMPLEX / SAHAR INT. SECURE ZONE
+--------------------------------------------------------------------------------
+CONTAINER & CARGO PARTICULARS
+--------------------------------------------------------------------------------
+CONTAINER NO | SEAL NO      | NO OF PKGS | CARGO DESCRIPTION   | GROSS MASS
+--------------------------------------------------------------------------------
+PGIC-8849201 | PGI-SEAL-014 | 12 CRATES  | ARM COMPUTING CHIPS | 1,240.00 KG
+                            |            | HS CODE: 5510.55    |
+                            |            | HS CODE: 5511.56    |
+                            |            | S.No AV154 / AX1100 |
+--------------------------------------------------------------------------------
+FREIGHT & CHARGES : PREPAID AS PER AGREEMENT
+FREIGHT TERMS     : FOB TIANJIN (ORIGIN TERMINAL CONTROL APPLIED)
+--------------------------------------------------------------------------------
+SHIPPED on board the Vessel in apparent good order and condition, weight, measure,
+marks, numbers, quality and value unknown, for carriage to the Port of Discharge.
+--------------------------------------------------------------------------------
+TOTAL GROSS WEIGHT VERIFIED AT DEPARTURE GATEWAY: 1,240.00 KG
+--------------------------------------------------------------------------------
+ISSUED AT         : TIANJIN PORT AUTHORITY EDI CONTAINER DESK
+================================================================================
+AUTHORIZED DIGITAL SIGNATURE & ENDORSEMENT:
+>>> PACIFIC GATEWAY INTERMODAL CARRIER LINE SYSTEM EDI GATEWAY <<<
+>>> DIGITAL AUTH TOKEN: e3b7a1d2f9c8e5430a1b2c7d4e5f6a7b <<<
+================================================================================

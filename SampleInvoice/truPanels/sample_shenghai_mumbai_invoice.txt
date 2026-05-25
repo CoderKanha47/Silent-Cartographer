@@ -1,0 +1,46 @@
+================================================================================
+                           COMMERCIAL INVOICE
+================================================================================
+INVOICE NUMBER : INV-2026-88391                      DATE: May 20, 2026
+REFERENCE NO   : PO-7729-AGIS                        TERM: CIF Mumbai Hub
+--------------------------------------------------------------------------------
+EXPORTER / SHIPPER:
+  ShengHai Optoelectronics Ltd.
+  Industrial Development Zone, Building B7
+  Shanghai (ShengHai), China
+  Email: logistics@shenghaiphotoelec.cn
+
+IMPORTER / CONSIGNEE:
+  Aegis Supply Chain Solutions Pvt. Ltd.
+  Terminal 2 Logistics Yard, Sahar Cargo Complex
+  Andheri East, Mumbai, MH 400099
+  India
+--------------------------------------------------------------------------------
+PORT OF LOADING   : Shanghai Port (CNSHA)
+PORT OF DISCHARGE : Nhava Sheva / Mumbai Port (INNSA)
+CARRIER / VESSEL  : Pacific Voyager / V-206X
+MANIFEST ID       : MNF-2026-79F5
+--------------------------------------------------------------------------------
+
+ITEM   HS CODE       DESCRIPTION                  QTY   UNIT PRICE   TOTAL (USD)
+--------------------------------------------------------------------------------
+01     8528.59.00    High-Fidelity 15.6" LED     500     $25.00       $12,500.00
+                     Display Panels (Thin Film)
+                     
+02     8504.40.95    Solid-State Display Panel   250      $7.00        $1,750.00
+                     Inverter Board Modules
+
+--------------------------------------------------------------------------------
+TOTAL QUANTITY    : 750 UNITS
+CONSIGNMENT MASS  : 1,240.00 KG (Gross Weight)
+--------------------------------------------------------------------------------
+                                              SUBTOTAL:       $14,250.00
+                                              FREIGHT & INS:     $650.00
+                                              --------------------------
+                                              TOTAL INVOICE:  $14,900.00
+================================================================================
+REMARKS:
+- All items packaged in anti-static industrial crates with thermal protective wrap.
+- Manifest binding cross-match code: #MNF-2026-79F5.
+- Country of Origin: China.
+================================================================================

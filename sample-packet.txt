@@ -1,0 +1,19 @@
+==================================================
+                 PAGE 1: INVOICE
+==================================================
+INVOICE NUMBER: INV-2026-99401
+DATE: May 18, 2026
+VENDOR: Pacific Rim Shipping Corp
+TOTAL AMOUNT DUE: USD $9,000.00
+==================================================
+--- PAGE BREAK ---
+==================================================
+             PAGE 2: BILL OF LADING (BoL)
+==================================================
+B/L NUMBER: BOL-PACRIM-77301
+CARRIER: Pacific Rim Shipping Corp
+VESSEL VOYAGE: Pacific Explorer v104
+PORT OF LOADING: Shanghai, China
+PORT OF DISCHARGE: Paradip Port, India
+CONTAINER NUMBERS: MCU-992011-0, MCU-441029-3
+==================================================

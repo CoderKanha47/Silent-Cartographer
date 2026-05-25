@@ -1,0 +1,38 @@
+********************************************************
+EXPORT SALES INVOICE
+********************************************************
+Master Consignment Ref : BCH-SH-ROT-8890
+Invoice Ref            : INV-STRAP-042
+Document Date          : 2026-05-24
+
+SUPPLIER PROFILE
+--------------------------------------------------------
+Supplier Name          : Shenzen Precision Straps
+Factory Location       : Bao'an Manufacturing Corridor,
+                         Shenzhen, China
+
+LOGISTICS DETAILS
+--------------------------------------------------------
+Origin Port            : Shanghai, China (CNSHA)
+Destination Port       : Rotterdam, Netherlands (NLRTM)
+Freight Method         : Containerized Sea Cargo
+Container Number       : COSU9921840
+
+ITEMIZED CARGO
+--------------------------------------------------------
+Commodity              : Industrial Staging Enclosures
+HS Classification      : 7326.90
+Declared Quantity      : 6 Industrial Units
+
+DECLARED VALUES
+--------------------------------------------------------
+FOB Amount             : USD 12,500.00
+Declared Gross Weight  : 8,300.00 KG
+Estimated Net Weight   : 8,050.00 KG
+
+EXPORT VALIDATION
+--------------------------------------------------------
+Inspection Status      : CLEARED
+Packaging Condition    : ACCEPTABLE
+Dangerous Goods Flag   : NO
+********************************************************

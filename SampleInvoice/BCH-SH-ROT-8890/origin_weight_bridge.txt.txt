@@ -1,0 +1,26 @@
+########################################################
+AUTOMATED PORT WEIGH-BRIDGE TICKET
+########################################################
+Facility Name           : Port of Shanghai Terminal 4
+Location Code           : CNSHA-T4
+Ticket ID               : WB-CNSHA-552901
+
+CONTAINER DETAILS
+--------------------------------------------------------
+Container ID            : COSU9921840
+Seal Number             : SH88402911
+Trailer Unit            : CN-TR-2288
+
+WEIGHT RECORD
+--------------------------------------------------------
+Scale Timestamp         : 2026-05-24 08:42:11 CST
+Recorded Net Payload    : 28,450.00 KG
+Scale Calibration       : VALID
+Overload Detection      : NEGATIVE
+
+SECURITY STATUS
+--------------------------------------------------------
+Container Status        : SECURE
+Inspection Gate         : GATE-04
+Verified By             : Automated Logistics Scanner
+########################################################

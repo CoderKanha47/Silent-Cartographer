@@ -1,0 +1,33 @@
+========================================================
+CUSTOMS EXPORT SINGLE ADMINISTRATIVE DOCUMENT
+========================================================
+Filing Authority       : Shanghai Port Customs Authority
+Port Code              : CNSHA
+Master Consignment Ref : BCH-SH-ROT-8890
+Container ID           : COSU9921840
+
+EXPORTER SUMMARY
+--------------------------------------------------------
+1. Yangtze Battery Cells Ltd
+2. Shenzen Precision Straps
+3. CoreThermal Systems China
+
+DECLARED GOODS SUMMARY
+--------------------------------------------------------
+| Invoice Ref    | HS Code | Gross Mass (KG) |
+|----------------|---------|-----------------|
+| INV-BAT-001    | 8507.60 | 10,150.00       |
+| INV-STRAP-042  | 7326.90 | 8,300.00        |
+| INV-THERM-991  | 8419.50 | 10,000.00       |
+
+TOTAL DECLARED EXPORT MASS
+--------------------------------------------------------
+Total Declared Gross Mass : 28,450.00 KG
+
+CUSTOMS PROCESSING STATUS
+--------------------------------------------------------
+Export Inspection        : PASSED
+Hazardous Cargo Review   : CLEARED
+Container Seal Status    : VERIFIED
+Final Customs Decision   : RELEASED
+========================================================

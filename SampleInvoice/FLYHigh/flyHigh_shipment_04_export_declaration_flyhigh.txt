@@ -1,0 +1,32 @@
+========================================================================
+TAIWAN CUSTOMS ADMINISTRATION
+MINISTRY OF FINANCE EXPORT DECLARATION
+========================================================================
+DECLARATION NUMBER: TW-EXP-2026-004521             REGISTRATION DATE: May 21, 2026
+CUSTOMS EXPORT BRANCH: Keelung Port Customs Security Perimeter Zone 1
+OUTBOUND CLEARANCE BROKER: Formosa Trade-Link Logistics JSC
+
+1. EXPORTER: Formosa Drone Tech Corp., Taipei, Taiwan (Unified Business No: 88491024)
+2. IMPORTER: flyHigh Hobby Club India, Cuttack, India
+3. FINAL COUNTRY OF TERMINAL TARGET: India (IN)
+4. INTERMODAL MODE: Maritime Freight Containerization
+
+------------------------------------------------------------------------
+STATISTICAL MATRIX & TARIFF REPORT
+------------------------------------------------------------------------
+Assigned Box Tracker: 1 x 20ft Standard Utility Box Container (FMSC-4451092)
+Customs Boundary Lock Seal Check: MATCH [Lock Tag Seal ID: TW-SEAL-77128]
+
+Product Matrix Line Item Metrics:
+Line 01: HS Code 9503.00.30 | Qty: 50 Units | Val: USD 2,250.00 | RC Coaxial Helicopters
+Line 02: HS Code 9503.00.30 | Qty: 50 Units | Val: USD 1,250.00 | RC 1:16 Crawlers
+Line 03: HS Code 9503.00.30 | Qty: 25 Units | Val: USD 1,500.00 | RC Brushless Motor Drift Cars
+
+BORDER DATA SUMMARY STATS:
+Total Declared Inbound Net Weight Mass: 420.00 KG
+Total Declared Inbound Gross Weight Mass: 510.00 KG
+FOB Total Declared Valuation: USD 5,000.00
+
+RECORD ENTRY CLEARANCE: PASSED STAMP
+Security clearance checks completed. Authorized for open maritime lane transit exit.
+========================================================================

@@ -1,0 +1,28 @@
+========================================================================
+INTERNATIONAL CUSTOMS CLEARANCE DECLARATION (INBOUND LEDGER)
+========================================================================
+DECLARATION REF: CUSTOMS-WARN-883A
+PROCESSING MODE: CRITICAL SECURE CHECKPOINT
+
+ROUTING TELEMETRY LOOKUP:
+------------------------------------------------------------------------
+PORT OF DEPARTURE ORIGIN: CNTXG
+DISCHARGE POINT TARGET: R0GUE
+TRANSIT BOND ID: BOND-8831-X
+
+LINE-ITEM CARGO SUMMARY:
+------------------------------------------------------------------------
+ITEM | CUSTOMS HS TARIFF | CLASSIFICATION TYPE          | AUDIT VALUE
+01   | 8541.41.00        | ELECTRONICS LASER DIODES      | 42,500.00 EUR
+02   | 9306.90.00        | MILITARY LOGISTICS COMPONENT | 24,000.00 EUR
+
+METRIC DISPATCH WEIGHT LEDGER:
+------------------------------------------------------------------------
+LINE COUNTER TALLY: 2 ASSIGNED ENTRIES
+REPORTED PACKING SLIP VOLUME: 1,200 PKGS
+GROSS WEIGHT TALLY: 4210.0 KG
+TOTAL FOB VAL VALUE: 66500.00 EUR
+
+========================================================================
+CRITICAL AUDIT NOTE: ENSURE MANIFEST SEAL RECORDS AGREE WITH INVOICE.
+========================================================================

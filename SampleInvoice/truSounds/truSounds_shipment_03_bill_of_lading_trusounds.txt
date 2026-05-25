@@ -1,0 +1,38 @@
+========================================================================
+INDO-CHINA MARITIME TRANSPORT LTD.
+NON-NEGOTIABLE OCEAN BILL OF LADING
+========================================================================
+B/L NUMBER: ICMT-HAN-CCU-88392                 EXPORT REFERENCES: VN-99214-B
+BOOKING REF: ICMT-HPH-77291                     STATUS: FREIGHT PREPAID
+
+SHIPPER (Exporter): VinaAudio Manufacturing Corp., Lot 12, Quang Minh IZ, Hanoi, VN
+CONSIGNEE (Importer): truSounds Audio Pvt. Ltd., Block P-1, Howrah, WB, IN
+NOTIFY PARTY: Aegis Supply Chain Solutions Pvt. Ltd., Kolkata Port Branch Office
+
+VESSEL / VOYAGE: MV Mekong Clipper v.042N
+PORT OF LOADING: Haiphong Port (VNHPH), Vietnam
+PORT OF DISCHARGE: Syama Prasad Mookerjee Port (Kolkata Port - INCCU), India
+PLACE OF DELIVERY: Howrah Warehouse Hub (Block P-1)
+
+------------------------------------------------------------------------
+PARTICULARS FURNISHED BY SHIPPER (UNVERIFIED CARRIER DECLARED)
+------------------------------------------------------------------------
+Container No. / Seal No.    Marks & Numbers    Description of Packages & Goods
+------------------------    ---------------    -------------------------------
+ICMT-9948215             M/F: TRUSOUNDS     45 Industrial Crates on 5 Pallets
+Seal: SG-VN883492        HOWRAH-P1          STC: 12-inch Neodymium Loudspeaker
+                            ITEM: 01-45        Subwoofer Driver Units
+                                               HS Code: 8518.29.00
+
+SHIPPERS DECLARED GROSS WEIGHT: 4,150.00 KG
+TOTAL MEASUREMENT: 14.85 CBM
+
+------------------------------------------------------------------------
+CARRIER TERMS & LEGAL LIABILITY CLAUSE
+------------------------------------------------------------------------
+Received by the Carrier from the Shipper in apparent good order and condition unless otherwise indicated herein, the total number of containers or packages specified above. Weight, measure, marks, numbers, quality, and contents of items are unknown to the ocean master carrier.
+
+ISSUED AT: Haiphong Port Terminal Terminal
+DATE OF INITIAL LOADING: May 17, 2026
+SIGNED AS CARRIER: For Indo-China Maritime Transport Ltd.
+========================================================================

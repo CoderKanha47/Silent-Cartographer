@@ -1,0 +1,39 @@
+========================================================================
+FORMOSA SEA CARRIER LTD.
+OCEAN LINER BILL OF LADING
+========================================================================
+B/L NUMBER: FMSC-TPE-PRP-99210                 SHIPPERS REF: TW-994102-L
+BOOKING LINE CONTEXT: FMSC-KLG-88102            FREIGHT STATUS: PREPAID
+
+SHIPPER: Formosa Drone Tech Corp., No. 88, Jianguo N. Rd, Taipei, Taiwan
+CONSIGNEE: flyHigh Hobby Club India, Link Road, Cuttack, Odisha, India
+NOTIFY AGENT: Aegis Supply Chain Solutions Pvt. Ltd., Paradip Port Office
+
+VESSEL / VOYAGE: MV Pacific Harrier v.206E
+PORT OF LOADING: Keelung Port (TWKEL), Taiwan
+PORT OF DISCHARGE: Paradip Port (INPRP), India
+PLACE OF FINAL INTERMODAL DELIVERY: Cuttack Distribution Vault
+
+------------------------------------------------------------------------
+PARTICULARS FURNISHED BY SHIPPER
+------------------------------------------------------------------------
+Container ID / Seal Ref    Marks & Numbers    Description of Shipment Cargo
+-----------------------    ---------------    -----------------------------
+FMSC-4451092             M/F: FLYHIGH       15 Heavy-Duty Corrugated Outer Master Crates on 2 Plastic Pallets
+Seal: TW-SEAL-77128        CUTTACK-ORISSA     STC: High-Fidelity Radio Controlled
+                            ITEM CODE: 01-15   Hobbies Model Toys Assembly
+                                               (Helicopters, Crawlers, Racing Cars)
+                                               Tariff HS Code Match: 9503.00.30
+
+SHIPPERS CERTIFIED GROSS MASS: 510.00 KG
+TOTAL CARRIER MEASUREMENT VOLUME: 4.25 CBM
+
+------------------------------------------------------------------------
+CARRIER SIGN-OFF
+------------------------------------------------------------------------
+Loaded on board apparent clean order condition. Manifest data stream verified against gate checkpoint scans.
+
+ISSUED AT: Keelung Outbound Container Hub
+LOADING ATTESTATION DATE: May 21, 2026
+SIGNED AS MASTER: For Formosa Sea Carrier Ltd.
+========================================================================

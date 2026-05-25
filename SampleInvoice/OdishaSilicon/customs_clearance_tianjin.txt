@@ -1,0 +1,49 @@
+================================================================================
+                    TIANJIN (XINGANG) CUSTOMS DECLARATION
+================================================================================
+DECLARATION NO : DEC-2026-99214                     RELEASE DATE: May 20, 2026
+EXPORT LIC NO  : EXP-TXG-883210-C                  DECLARANT CODE: 31220491X
+--------------------------------------------------------------------------------
+DECLARANT / AGENT:
+  Tianjin Logistics Forwarding Group
+  Customs Warehouse Deck #4, Tianjin Deepwater Port
+  Tianjin (Xingang), China
+
+CONSIGNOR (EXPORTER):
+  ShengHai Optoelectronics Ltd.
+  Industrial Development Zone, Building B7
+  Tianjin (Xingang), China
+
+CONSIGNEE (IMPORTER):
+  Odisha Silicon Tech
+  Bhubaneswar Industrial Estate
+  Bhubaneswar, Odisha 751024, India
+--------------------------------------------------------------------------------
+TRANSPORT MODE    : Sea Freight (Ocean Cargo)
+PORT OF EXIT      : Tianjin Port (CNTXG)
+COUNTRY OF DEST.  : India (IN)
+MANIFEST BIND ID  : MNF-2026-69F69
+--------------------------------------------------------------------------------
+
+LINE  HS CODE       GOODS DESCRIPTION              NET MASS (KG)  DECLARED (USD)
+--------------------------------------------------------------------------------
+01    5510.55.00    ARM X86 Chips S.No AV154       1,100.00 KG    $12,000.00
+                     
+02    5511.56.95    ARM X86 Chips S.No AX1100      140.00 KG      $5,000.00
+                    (Low Power)
+
+--------------------------------------------------------------------------------
+TOTAL PACKAGES    : 12 INDUSTRIAL CRATES
+TOTAL GROSS MASS  : 1,240.00 KG 
+TOTAL NET MASS    : 1,240.00 KG
+--------------------------------------------------------------------------------
+APPROVED STATUS   : STATUS_CLEARED_FOR_EXPORT
+VERIFICATION TAG  : CONSENSUS_MATCH_OK
+CUSTOMS INSPECTION: BYPASSED (AI-AUTOMATED RISK SCORE: 0.02)
+--------------------------------------------------------------------------------
+                                         DECLARED FOB VALUE:      $17,000.00
+================================================================================
+OFFICIAL STAMP / DIGITAL SIGNATURE:
+>>> TIANJIN PORT CUSTOMS AUTHORITY - AUTOMATED EXPORT CLEARANCE ENGINE <<<
+>>> DIGITAL TOKEN HASH: 9a7f21b8c6e3d5a4f7e2b1c0a8e9f4d3 <<<
+================================================================================

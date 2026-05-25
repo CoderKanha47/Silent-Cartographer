@@ -1,0 +1,35 @@
+========================================================================
+GENERAL DEPARTMENT OF VIETNAM CUSTOMS
+CUSTOMS EXPORT DECLARATION (TỜ KHAI XUẤT KHẨU)
+========================================================================
+DECLARATION NUMBER: VN-EXP-2026-7741             REGISTRATION DATE: May 16, 2026
+CUSTOMS CLEARANCE OFFICE: Haiphong Port Customs Branch (Zone 2)
+EXPORT CLEARANCE AGENT: Viet-Logistics Express JSC
+
+1. EXPORTER: VinaAudio Manufacturing Corp., Hanoi, Vietnam (Tax ID: 0102993812)
+2. IMPORTER: truSounds Audio Pvt. Ltd., Howrah, India
+3. COUNTRY OF DESTINATION: India (IN)
+4. TRANSPORT ROUTE: Sea Freight via Ocean Liner Vessel
+
+------------------------------------------------------------------------
+CARGO TELEMETRY & CLASSIFICATION DATA
+------------------------------------------------------------------------
+Total Container Matrix: 1 x 20ft Standard Dry Van (Container ID: ICMT-9948215)
+Customs Seal Verification: Approved Status - Checked [Seal No: SG-VN883492]
+
+Item Line No: 01
+Commodity National Tariff Code: 8518.29.00
+Product Specification: Lin-01 Speaker Drivers Core Unenclosed Assembly
+Commercial Transaction Value: USD 65,250.00
+
+STATISTICAL MASS RECORDED:
+Declared Total Gross Weight: 4,150.00 KG
+Declared Total Net Weight: 3,800.00 KG
+
+------------------------------------------------------------------------
+BORDER SECURITY CONTROL VERIFICATION
+------------------------------------------------------------------------
+Vietnam Customs Border Enforcement Unit certifies that the manifest records match structural requirements. Cargo authorized for release from security perimeter gates into international transit channels.
+
+STAMPED & APPROVED BY: Haiphong Outbound Customs Branch Office
+========================================================================

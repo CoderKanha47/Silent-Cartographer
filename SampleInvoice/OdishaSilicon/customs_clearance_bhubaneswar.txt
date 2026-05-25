@@ -1,0 +1,49 @@
+================================================================================
+                INDIAN CUSTOMS / MUMBAI AIR CARGO COMPLEX
+================================================================================
+ENTRY BILL NO  : BOE-2026-440193                   ENTRY DATE : May 21, 2026
+IGM NO / LINE  : IGM-993012 / L-44                 IEC NUMBER : 0319204969
+--------------------------------------------------------------------------------
+PORT OF ENTRY  : Mumbai Customs (INBOM1)
+ORIGIN COUNTRY : China (CN)
+PORT OF LADING : Xingang/Tianjin  (CNTXG) via Transit Track
+MANIFEST LINK  : MNF-2026-69F69
+
+IMPORTER / CONSIGNEE:
+  Odisha Silicon Tech
+  Bhubaneswar Industrial Estate
+  Bhubaneswar, Odisha 751024
+  India
+
+CUSTOMS BROKER / AGENT:
+  Aegis Cleardesk Gateway India
+  Sahar Customs House, Cabin 12B
+  Mumbai, India
+--------------------------------------------------------------------------------
+ASSESSMENT PARAMETERS & INLINE VERIFICATION
+--------------------------------------------------------------------------------
+ITEM   HS CODE       GOODS / ASSESSED DESCRIPTION       QTY (U)    DECLARED VALUE
+--------------------------------------------------------------------------------
+01     5510.55.00    ARM X86 Chips S.No AV154           100        $12,000
+
+02     5511.56.95    ARM X86 Chips S.No AX1100          10         $5,000
+                    (Low Power)
+
+--------------------------------------------------------------------------------
+CONSIGNMENT PARAMETERS FOR CONSENSUS EVALUATION:
+--------------------------------------------------------------------------------
+GROSS WEIGHT DECLARED : 1,024.00 KG
+GROSS WEIGHT EXPECTED : 1,100.00 KG
+--------------------------------------------------------------------------------
+DUTY CALCULATIONS (INR EQUIVALENT):
+- ASSESSABLE VALUE     : INR 1,385,000.00
+- BASIC CUSTOMS DUTY   : INR 138,500.00 (10%)
+- SOCIAL WELFARE SURCH : INR 13,850.00  (10% of BCD)
+- INTEGRATED GST (IGST): INR 277,470.00 (18%)
+--------------------------------------------------------------------------------
+CURRENT ASSESSMENT STATUS : HELD_FOR_PHYSICAL_AUDIT
+AUDIT TRIGGER FACTOR     : WEIGHT_DISCREPANCY_DETECTED (+180.00 KG INDUCTION)
+================================================================================
+OFFICIAL LOG / RECORD END
+>>> SAHAR AIR CARGO AUTHORITY -- EDI RISK MANAGEMENT GATEWAY SYSTEM <<<
+================================================================================

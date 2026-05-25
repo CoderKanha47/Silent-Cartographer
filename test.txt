@@ -1,0 +1,28 @@
+
+==================================================
+              GLOBAL LOGISTICS & FREIGHT INC.
+==================================================
+INVOICE NUMBER: INV-2026-99401
+DATE: May 18, 2026
+DUE DATE: June 18, 2026
+
+VENDOR:
+Pacific Rim Shipping Corp
+100 Maritime Boulevard, Suite A
+San Francisco, CA 94105
+
+BILL TO:
+Acme Supply Chain Solutions Ltd
+Industrial Area, Phase II
+Bhubaneswar, Odisha, 751010
+
+LINE ITEMS:
+--------------------------------------------------
+1. Ocean Freight - 40ft Container (X3)   $9,000.00
+2. Customs Clearance & Brokerage Fees      $750.00
+3. Port Handling & Terminal Charges       $500.00
+--------------------------------------------------
+TOTAL AMOUNT DUE: USD $10250.00
+
+TERMS: Net 30. Please remit payments via standard corporate wire transfer.
+==================================================

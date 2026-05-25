@@ -1,0 +1,30 @@
+========================================================================
+CUSTOMS ENTRY SYSTEM // BILL OF ENTRY & IMPORT DECLARATION
+========================================================================
+ENTRY ENTRY MANIFEST ID: BOE-INBOUND-2026-00812
+CUSTOMS ARCHIVE STAMP: 2026-05-23-14:22:10
+
+DECLARANT SUMMARY:
+IMPORTER ID: DE-81230491
+CARRIER NAME: OCEANIC FREIGHTLINER CO
+VESSEL VOYAGE NO: OS-V882
+
+MANIFEST LOGISTICS LOG LOOKUP:
+------------------------------------------------------------------------
+ORIGIN ROUTING POINT: CNTXG
+DESTINATION PORTS NODE: DEHAM
+DECLARED CARGO VALUE: 60700.00 EUR
+
+DOCUMENT RECONCILIATION DATA MATRIX:
+------------------------------------------------------------------------
+ITEM NO | HARMONIZED TARIFF CODE | ITEM DESC / ENTRY ASSIGNMENT
+001     | 8541.41.00             | RECEPTACLE DIODE OPTO-ELECTRONIC
+002     | 8543.70.90             | AMPLIFICATION EQUIPMENT ELECTRONIC
+
+PHYSICAL MEASUREMENT AUDIT:
+------------------------------------------------------------------------
+DECLARED QUANTITY REC: 1,200 UNITS
+TOTAL SYSTEM GROSS WEIGHT: 4850.0 KG
+CONTAINER COUNT TALLY: 1 UNITS (FEU 40FT)
+SYSTEM VERDICT: VERIFIED FOR TARIFF ENTRY ASSESSMENT
+========================================================================

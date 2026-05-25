@@ -1,0 +1,38 @@
+===================================================================
+QATAR ENERGY LOGISTICS & TRADING
+DOHA, STATE OF QATAR
+===================================================================
+COMMERCIAL INVOICE
+
+Invoice Ref: QE-MUM-CRU-992
+Date: May 18, 2026
+Consignment ID: BATCH-QA-GJ-04
+
+SHIPPER: Qatar Energy Crude Distillation Terminal, Mesaieed, Qatar
+CONSIGNEE: Western India Refining Corp, Gujarat Port Terminal, India
+
+VESSEL NAME: MT AL-TRAFALGAR
+PORT OF LOADING: Mesaieed Port, Qatar (QA MSW)
+PORT OF DISCHARGE: Gujarat Port / Mundra Terminal, India (IN MUN)
+
+-------------------------------------------------------------------
+CARGO DESCRIPTION & ATTRIBUTES:
+-------------------------------------------------------------------
+Commodity: Qatar Light Crude Oil (API Gravity ~41.0)
+Net Volume: 550,000 Barrels
+Net Volume (Liters): 87,443,500 Liters
+UN Hazard Classification: Class 3 (Flammable Liquid)
+UN Material Number: UN 1267 (Petroleum Crude Oil)
+Measured Flash Point: 26°C
+
+-------------------------------------------------------------------
+COMPLIANCE METRICS & VALUATIONS:
+-------------------------------------------------------------------
+Gross Cargo Weight: 73,425.00 Metric Tons (MT)
+FOB Financial Value: $41,250,000.00 USD
+Harmonized System Tariff Code (HS Code): 2709.00.00 (Crude Petroleum)
+
+===================================================================
+Authorized Signature: Kh. Al-Thani
+Qatar Energy Operations Control
+===================================================================

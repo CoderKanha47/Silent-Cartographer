@@ -1,0 +1,48 @@
+========================================================================
+INDIAN CUSTOMS EDI SYSTEM - ICEGATE
+BILL OF ENTRY FOR HOME CONSUMPTION (FORM III)
+========================================================================
+ENTRY FILE IDENTIFIER: ICEGATE-BOE-2026-66319          ENTRY DATE: May 21, 2026
+PORT OF DESTINATION ENTRY: Paradip Sea Port (INPRP)
+CUSTOMS HOUSE: Paradip Port Trust Complex Border Hub Office
+
+LICENSED BROKER STACK:
+Aegis Supply Chain Solutions Pvt. Ltd., Paradip Marine Drive Office
+License Ref: PRP-CB-2024-04B
+
+IMPORTER RECOGNITION DATABASE DATA:
+flyHigh Hobby Club India, Link Road, Cuttack, Odisha, Pin-753012, India
+IEC Code: 1215099431 | GSTIN: 21AAAFF4591D2Z8
+
+------------------------------------------------------------------------
+INBOUND CARGO ENTRY RECONCILIATION LEDGER
+------------------------------------------------------------------------
+Associated Import General Manifest (IGM) ID: FMSC-PRP-2026-009931
+Master Ship Carrier Vessel Reference: MV Pacific Harrier v.206E
+Filing Cargo Classification Mapping:
+
+Line Item   Tariff HS Code   Declared Commodity Specification   Assessed CIF Value
+---------   --------------   --------------------------------   ------------------
+01          9503.00.30       RC Model Toys (Helicopters)        USD 2,250.00
+02          9503.00.30       RC Model Toys (Crawler Cars)       USD 1,250.00
+03          9503.00.30       RC Model Toys (Brushless Cars)     USD 1,500.00
+
+------------------------------------------------------------------------
+PHYSICAL CONTAINER SCANNER & PORT TELEMETRY
+------------------------------------------------------------------------
+Target Inspection Unit Reference: FMSC-4451092
+Declared Document Manifest Gross Weight Mass: 510.00 KG
+
+LIVE PORT SCALE AUTOMATED TELEMETRY FEED:
+Location Node Coordinates: Paradip Terminal 2 Container Weighbridge
+Hardware Scale Serial Tracker: WB-PRP-02A
+LIVE ELECTRONIC MEASURED CONTAINER MASS: 510.00 KG
+CALCULATED DATA STREAM VARIANT DELTA: 0.00 KG (PERFECT DATA CONVERGENCE)
+
+------------------------------------------------------------------------
+AUTOMATED COMPLIANCE ENGINE DIRECTIVE
+------------------------------------------------------------------------
+STATUS VERDICT: PASS - CONSENSUS SUCCESS
+Reason code: [ALL_CHANNELS_DATA_ALIGNED] & [HS_CODE_CONSISTENCY_CLEAN]
+Action Directive: Paperwork stream matches physical metrics. Zero discrepancy found. Bypass physical containment audit holding bay. Release cargo for inland distribution line dispatch down to Cuttack Vault Hub.
+========================================================================

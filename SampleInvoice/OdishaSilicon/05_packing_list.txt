@@ -1,0 +1,48 @@
+================================================================================
+                                 PACKING LIST
+================================================================================
+PACKING LIST NO: PL-2026-99104                      DATE       : May 19, 2026
+ASSOCIATED INV : INV-2026-88491                      PURCHASE ORD: PO-AEGIS-2026-094
+MANIFEST BIND  : MNF-2026-69F69                      EST. ARRIVAL: May 21, 2026
+--------------------------------------------------------------------------------
+
+EXPORTER / MANUFACTURER:
+  ShengHai Optoelectronics Ltd.
+  Industrial Development Zone, Building B7
+  Tianjin (Xingang), China
+
+CONSIGNEE / IMPORTER:
+  Odisha Silicon Tech
+  Bhubaneswar Industrial Estate
+  Bhubaneswar, Odisha 751024, India
+
+LOGISTICS LAYER COORDINATOR:
+  Aegis Supply Chain Solutions Pvt. Ltd.
+  Terminal 2 Logistics Yard, Sahar Cargo Complex, Mumbai
+--------------------------------------------------------------------------------
+PACKAGING SUMMARY & ITEMIZATION DETAILS
+--------------------------------------------------------------------------------
+CRATE NO. | DIMENSIONS (cm) | NET MASS (KG) | GROSS MASS (KG) | CONTENTS
+--------------------------------------------------------------------------------
+CR-001    | 120 x 80 x 100  | 100.00 KG     | 110.00 KG       | ARM X86 Chips S.No AV154
+CR-002    | 120 x 80 x 100  | 100.00 KG     | 110.00 KG       | ARM X86 Chips S.No AV154
+CR-003    | 120 x 80 x 100  | 100.00 KG     | 110.00 KG       | ARM X86 Chips S.No AV154
+CR-004    | 120 x 80 x 100  | 100.00 KG     | 110.00 KG       | ARM X86 Chips S.No AV154
+CR-005    | 120 x 80 x 100  | 100.00 KG     | 110.00 KG       | ARM X86 Chips S.No AV154
+CR-006    | 120 x 80 x 100  | 100.00 KG     | 110.00 KG       | ARM X86 Chips S.No AV154
+CR-007    | 120 x 80 x 100  | 100.00 KG     | 110.00 KG       | ARM X86 Chips S.No AV154
+CR-008    | 120 x 80 x 100  | 100.00 KG     | 110.00 KG       | ARM X86 Chips S.No AV154
+CR-009    | 120 x 80 x 100  | 100.00 KG     | 110.00 KG       | ARM X86 Chips S.No AV154
+CR-010    | 120 x 80 x 100  | 100.00 KG     | 110.00 KG       | ARM X86 Chips S.No AV154
+CR-011    | 100 x 60 x 80   | 70.00 KG      | 70.00 KG        | ARM X86 Chips S.No AX1100
+CR-012    | 100 x 60 x 80   | 70.00 KG      | 70.00 KG        | ARM X86 Chips S.No AX1100
+--------------------------------------------------------------------------------
+TOTALS    | 12 CRATES       | 1,140.00 KG   | 1,240.00 KG     | 110 TOTAL UNITS
+--------------------------------------------------------------------------------
+VERIFICATION PARAMETERS:
+- SECURE WRAPPING : YES (ANTI-STATIC SHIELDING INDUSTRIAL FOIL)
+- SEAL INTEG TAG  : CNSHA-SECURE-99214A
+================================================================================
+AUTHORIZED SIGNATURE & CARGO INSPECTION AUDIT
+>>> SHENGHAI LOGISTICS EXPORT WAREHOUSE INSPECTION PASSED <<<
+================================================================================

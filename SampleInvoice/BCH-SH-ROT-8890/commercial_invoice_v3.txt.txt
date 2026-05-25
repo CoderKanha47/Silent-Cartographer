@@ -1,0 +1,37 @@
+########################################################
+INTERNATIONAL TRADE COMMERCIAL INVOICE
+########################################################
+Master Consignment ID  : BCH-SH-ROT-8890
+Invoice Number         : INV-THERM-991
+Issue Date             : 2026-05-24
+
+EXPORTING ENTITY
+--------------------------------------------------------
+Company Name           : CoreThermal Systems China
+Manufacturing Facility : Suzhou Thermal Processing Park
+Country                : China
+
+SHIPPING ROUTE
+--------------------------------------------------------
+Load Port              : Shanghai, China (CNSHA)
+Discharge Port         : Rotterdam, Netherlands (NLRTM)
+Container Reference    : COSU9921840
+
+MERCHANDISE DETAILS
+--------------------------------------------------------
+| Description                 | HS Code | Quantity |
+|-----------------------------|---------|----------|
+| Liquid Cooling Manifolds    | 8419.50 | 120 Sets |
+
+TRADE VALUE SUMMARY
+--------------------------------------------------------
+FOB Invoice Value      : USD 31,000.00
+Gross Cargo Weight     : 10,000.00 KG
+Net Cargo Weight       : 9,720.00 KG
+
+CERTIFICATION BLOCK
+--------------------------------------------------------
+Export Declaration     : FILED
+Commercial Verification: COMPLETE
+Seal Integrity         : PASSED
+########################################################

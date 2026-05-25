@@ -1,0 +1,51 @@
+========================================================================
+INDIAN CUSTOMS EDI SYSTEM - ICEGATE
+BILL OF ENTRY FOR HOME CONSUMPTION (FORM III)
+========================================================================
+ENTRY ENTRY NUMBER: ICEGATE-BOE-2026-55102            ENTRY DATE: May 21, 2026
+PORT OF IMPORTATION: Kolkata Sea Port (INCCU)
+CUSTOMS HOUSE: Syama Prasad Mookerjee Port Customs Complex
+
+CUSTOMS BROKER / LOGISTICS AGENT:
+Aegis Supply Chain Solutions Pvt. Ltd., 12 Strand Road, Kolkata
+License No: CAL-CB-2021-99A
+
+IMPORTER RECOGNITION DATA:
+truSounds Audio Pvt. Ltd., Howrah Industrial Complex, Block P-1, WB, IN
+IEC Code: 0314099231 | GSTIN: 19AAACT8839F1Z0
+
+------------------------------------------------------------------------
+CARGO IMPORT MANIFEST COMPARISON LEDGER
+------------------------------------------------------------------------
+Associated IGM No: ICMT-KOL-2026-00482          Line Item Ref: 114
+Vessel Name / Voyage: MV Mekong Clipper v.042N      Line Code: INDOCHINA-MARITIME
+
+Line    HS Code Declared    Description of Imported Cargo    Declared Value (Asses.)
+----    ----------------    -----------------------------    -----------------------
+01      8518.90.00       *ATTN: SPEAKER COMPONENTS PARTS* USD 65,250.00
+                            [12-Inch Driver Components Only]
+
+*CRITICAL WARNING - TARIFF MISCLASSIFICATION ENGINE ALERT DETECTED*
+Origin Document Stream State HS Code: 8518.29.00 (Loudspeakers - 10% BCD Rate)
+Draft Bill of Entry State HS Code: 8518.90.00 (Speaker Parts - 7.5% BCD Rate)
+>>> POTENTIAL SYSTEM TARIFF EVASION BY ASSIGNED AGENT RECLASSIFICATION DETECTED
+
+------------------------------------------------------------------------
+PHYSICAL CONTAINER SCANNER & TELEMETRY LEDGER
+------------------------------------------------------------------------
+Allocated Box Reference: ICMT-9948215
+Declared Document Gross Weight: 4,150.00 KG
+
+ELECTRONIC WEIGHBRIDGE LOG ENTRY:
+Location Node: Kolkata Port Yard Terminal 4 Scales
+Physical Scale Asset ID: WB-KOL-04E
+LIVE MEASURED GROSS CONTAINER MASS: 4,680.00 KG
+CALCULATED SYSTEM MASS VARIANT DELTA: +530.00 KG
+
+------------------------------------------------------------------------
+AUTOMATED SYSTEM RISK DIRECTIVE
+------------------------------------------------------------------------
+STATUS FLAG: DISCREPANCY DETECTED - HOLD_FOR_PHYSICAL_AUDIT
+Reason code: [INDUCTION_OVERLOAD_DELTA_530KG] & [HS_CODE_ALIGNMENT_FAILURE]
+Action Required: Stop electronic processing stream. Do not clear. Consign container to physical container examination bay 2.
+========================================================================

@@ -1,0 +1,24 @@
+********************************************************
+EXPORT PACKING DECLARATION
+********************************************************
+Invoice Link           : INV-STRAP-042
+Master Consignment     : BCH-SH-ROT-8890
+
+Cargo Description      : Industrial Staging Enclosures
+
+WOODEN CRATE SUMMARY
+--------------------------------------------------------
+| Crate No | Packaging Type | Gross Weight (KG) |
+|----------|----------------|-------------------|
+| WC-001   | Wooden Crate   | 1383.33           |
+| WC-002   | Wooden Crate   | 1383.33           |
+| WC-003   | Wooden Crate   | 1383.33           |
+| WC-004   | Wooden Crate   | 1383.33           |
+| WC-005   | Wooden Crate   | 1383.34           |
+| WC-006   | Wooden Crate   | 1383.34           |
+
+FINAL PACKING TOTAL
+--------------------------------------------------------
+Total Wooden Crates    : 6
+Total Gross Weight     : 8,300.00 KG
+********************************************************

@@ -1,0 +1,27 @@
+********************************************************
+EU CUSTOMS IMPORT DECLARATION
+********************************************************
+Receiving Authority     : Rotterdam Port Customs
+Destination Port Code   : NLRTM
+Master Consignment Ref  : BCH-SH-ROT-8890
+Container Reference     : COSU9921840
+
+IMPORTED CARGO REGISTER
+--------------------------------------------------------
+| Commodity Description      | HS Code | Gross KG |
+|----------------------------|---------|----------|
+| Lithium-Ion Cells          | 8507.60 | 10150.00 |
+| Industrial Staging Units   | 7326.90 | 8300.00  |
+| Liquid Cooling Manifolds   | 8419.50 | 10000.00 |
+
+IMPORT MASS DECLARATION
+--------------------------------------------------------
+Total Imported Gross Mass : 28,450.00 KG
+
+ENTRY CONTROL RESULTS
+--------------------------------------------------------
+Scanner Verification     : PASS
+Cargo Integrity Check    : PASS
+EU Customs Risk Flag     : NONE
+Release Authorization    : GRANTED
+********************************************************

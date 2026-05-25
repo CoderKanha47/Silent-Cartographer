@@ -1,0 +1,42 @@
+========================================================
+COMMERCIAL INVOICE
+========================================================
+Document Type           : Vendor Commercial Invoice
+Master Consignment Ref  : BCH-SH-ROT-8890
+Invoice Reference       : INV-BAT-001
+Invoice Date            : 2026-05-24
+
+EXPORTER INFORMATION
+--------------------------------------------------------
+Vendor Name             : Yangtze Battery Cells Ltd
+Exporter Address        : Pudong Industrial Energy Zone,
+                          Shanghai, China
+Country of Origin       : China
+
+SHIPMENT INFORMATION
+--------------------------------------------------------
+Port of Loading         : Shanghai, China (CNSHA)
+Port of Discharge       : Rotterdam, Netherlands (NLRTM)
+Incoterm                : FOB
+Container ID            : COSU9921840
+Transport Mode          : Ocean Freight
+
+GOODS DECLARATION
+--------------------------------------------------------
+| Item No | Product Description        | HS Code | Qty |
+|---------|----------------------------|---------|-----|
+| 001     | Lithium-Ion Cells          | 8507.60 | 400 |
+
+FINANCIAL SUMMARY
+--------------------------------------------------------
+FOB Commercial Value    : USD 45,000.00
+Gross Weight            : 10,150.00 KG
+Net Weight              : 9,940.00 KG
+Package Count           : 40 Crates
+
+AUTHORIZED EXPORT RECORD
+--------------------------------------------------------
+Verified By             : Export Compliance Unit
+Seal Status             : VERIFIED
+Customs Release         : APPROVED
+========================================================

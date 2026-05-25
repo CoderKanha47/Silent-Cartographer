@@ -1,0 +1,12 @@
+==================================================
+                 COMMERCIAL INVOICE
+==================================================
+INVOICE REF: INV-SZ-DEL-99201
+DATE: May 19, 2026
+VENDOR: Shenzhen Electronics Manufacturing Ltd
+CONSIGNEE: India Mobile Tech Solutions, Delhi
+
+ITEM DESCRIPTION:
+- White-Label Smart Handsets (Model M-3) | QTY: 10,000 units
+TOTAL VALUE: USD $150,000.00
+==================================================

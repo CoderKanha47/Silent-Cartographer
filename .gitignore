@@ -1,0 +1,20 @@
+# Local Environment Variables
+.env
+.env.local
+.env.development.local
+.env.production.local
+
+# Dependencies
+node_modules/
+/dist
+/.next/
+
+# Docker & Databases
+.supabase/
+docker/volumes/
+*.db
+*.log
+
+# OS Metadata
+.DS_Store
+Thumbs.db
