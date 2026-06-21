@@ -38,11 +38,10 @@ Do not output any Chinese characters or non-English variables under any circumst
         const bytes = await file.arrayBuffer();
         const buffer = Buffer.from(bytes);
         
-        // 💡 Fix: Unified variable declaration and stripped non-printable control byte sets
+        // Strip non-printable control byte sets
         let rawTextContent = buffer.toString('utf-8').replace(/[\x00-\x08\x0B\x0C\x0E-\x1F\x7F-\x9F]/g, "").trim();
 
-        // 💡 Safe Fallback: If text is raw binary trash (like an image/PDF upload), swap in a mock layout
-        // to keep the Groq API from failing on malformed non-string assets during testing.
+        // Safe Fallback: If text is raw binary trash, swap in a mock layout
         if (!rawTextContent || rawTextContent.length < 10 || rawTextContent.includes('%PDF')) {
           rawTextContent = `
             COMMERCIAL INVOICE
@@ -57,7 +56,7 @@ Do not output any Chinese characters or non-English variables under any circumst
         let parsedData: any = null;
 
         if (isProduction) {
-          // 🌟 PRODUCTION PIPELINE: Upgraded to Groq's Strict JSON Schema Format
+          // 🌟 PRODUCTION PIPELINE: Routing to an active Groq Production Model
           const aiResponse = await fetch("https://api.groq.com/openai/v1/chat/completions", {
             method: 'POST',
             headers: {
@@ -65,7 +64,8 @@ Do not output any Chinese characters or non-English variables under any circumst
               'Authorization': `Bearer ${groqApiKey}`
             },
             body: JSON.stringify({
-              model: "llama-3.3-70b-specdec",
+              // 💡 FIXED: Switched decommissioned specdec alias to the active production model string
+              model: "llama-3.3-70b-versatile",
               messages: [
                 { role: "system", content: extractionPrompt },
                 {
@@ -74,7 +74,6 @@ Do not output any Chinese characters or non-English variables under any circumst
                 }
               ],
               temperature: 0.0,
-              // 💡 Fix: Using explicit token-level schema constraint format to clear 400 Bad Requests
               response_format: {
                 type: "json_schema",
                 json_schema: {
