@@ -2,28 +2,25 @@ services:
   web:
     container_name: verification-web
     build:
-      context: ./apps/web
-      dockerfile: Dockerfile
-    working_dir: /app
+      context: .
+      dockerfile: Dockerfile.local
+    # Remove working_dir completely so it honors the Dockerfile's location
     ports:
       - "3000:3000"
-    command: npm run dev
+    # Remove the overridden command completely so it runs the Dockerfile's CMD
     volumes:
+      # Keep your upload directory synced if needed
       - next_upload_cache:/app/apps/web/public/uploads
-      - ./apps/web:/app
-      - /app/.next
-      - /app/node_modules
     environment:
       - NODE_ENV=development
-      - NEXT_DEV_POLL=1000
-      - CHOKIDAR_USEPOLLING=true
-      - WATCHPACK_POLLING=true
       - NEXT_PUBLIC_SUPABASE_URL=http://supabase_kong_supply-chain-verifier:8000
       - SUPABASE_SERVICE_ROLE_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoic2VydmljZV9yb2xlIiwiaXNzIjoic3VwYWJhc2UifQ==.ASBxZWzA9BAeQ78sRfnnYDclyftrQJyyQYGyzKVDJQM
     networks:
       - supabase_app_bridge
+
 volumes:
   next_upload_cache:
+
 networks:
   supabase_app_bridge:
     name: supabase_network_supply-chain-verifier

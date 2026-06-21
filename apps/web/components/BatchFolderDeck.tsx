@@ -6,7 +6,6 @@ import {
   FolderOpen,
   FileText,
   Cpu,
-  Loader2,
   Layers,
   CheckCircle,
   AlertTriangle
@@ -18,8 +17,8 @@ import {
   ManifestDocExtraction
 } from './SupplyChainDashboard';
 
-import { createWorker } from 'tesseract.js';
-import { getDictionaryHsCode, getDictionaryPortNode } from '../utils/supabase/complianceDictionary';
+import { createWorker } from 'tesseract.js'; //  Restored for image OCR tracking
+import { getDictionaryHsCode } from '../utils/supabase/complianceDictionary';
 
 /* ---------------- LOGISTICS STANDARDIZATION & METRIC CONVERSION UTILITIES ---------------- */
 
@@ -204,20 +203,6 @@ function BatchFolderCard({
     };
   }, []);
 
-  const safeJsonParse = (raw: string): any[] => {
-    const cleaned = raw
-      .replace(/```json/gi, '')
-      .replace(/```/g, '')
-      .replace(/<think>[\s\S]*?<\/think>/g, '')
-      .trim();
-
-    const start = cleaned.indexOf('[');
-    const end = cleaned.lastIndexOf(']');
-
-    if (start === -1 || end === -1) throw new Error('No JSON array found');
-    return JSON.parse(cleaned.slice(start, end + 1));
-  };
-
   const runPipeline = async () => {
     if (!files.length) return;
 
@@ -235,85 +220,47 @@ function BatchFolderCard({
         files.map(file => extractRawTextFromFile(file, (msg) => setCurrentAction(msg)))
       );
 
-      const aggregated = files
-        .map((f, i) => `[FILE_INDEX: ${i}]\n[FILE_NAME: ${f.name}]\nCONTENT:\n${extractedTexts[i]}`)
-        .join('\n\n---\n\n');
-
       setProgress(40);
-      setCurrentAction('Extracting structured data...');
+      setCurrentAction('Executing server audit matrix...');
 
       intervalRef.current = setInterval(() => {
         setProgress((prev) => {
-          if (prev < 80) return prev + 2;
+          if (prev < 90) return prev + 2;
           return prev;
         });
       }, 400);
 
-      const system = `
-You are an elite International Maritime Audit Extraction Engine. Parse raw texts and normalize them into a strict JSON format.
-Always search for weights, values, and identifiers.
+      const formData = new FormData();
+      files.forEach((file) => formData.append('files', file));
 
-CRITICAL RULES FOR WEIGHT EXTRACTION:
-1. Extract exact file names and indexes accurately.
-2. Classify documentType cleanly: "commercial_invoice", "packing_list", "entry_bill", "weigh_bridge_log", "port_invoice".
-3. Dynamic Layout Rule: For documents classified as "weigh_bridge_log", find the true weight of the cargo product itself.
-   - If there is an explicit "NET", "NETTO", or "PRODUCT" weight, parse that value.
-   - If you see distinct fields for both "GROSS" (total truck weight) and "TARE" (empty vehicle weight), perform a mathematical deduction (Gross - Tare) to compute the true item weight.
-   - Map this resolved pure product value into the "grossWeight" field.
-4. Capture full numeric weights accompanied by their explicit unit notation (e.g., "25760 KG", "15120 KGS", "42.18 MT").
-
-OUTPUT JSON SCHEMA ONLY:
-[
-  {
-    "fileIndex": number,
-    "fileName": "string",
-    "documentType": "string",
-    "extractedData": {
-      "grossWeight": "string", 
-      "fobValue": "string",
-      "hsCode": "string",
-      "routingPoint": "string"
-    }
-  }
-]
-`;
-
-      const res = await fetch('http://localhost:11434/api/generate', {
+      const res = await fetch('/api/verify', {
         method: 'POST',
         signal: controller.signal,
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          model: 'qwen2.5:3b',
-          system,
-          prompt: aggregated,
-          stream: false,
-          options: { temperature: 0.1, num_ctx: 4096 }
-        })
+        body: formData
       });
 
       if (intervalRef.current) clearInterval(intervalRef.current);
 
       const data = await res.json();
-      const parsed = safeJsonParse((data.response || '').trim());
 
-      const normalized: ManifestDocExtraction[] = parsed.map((item: any, index: number) => {
-        const targetIdx = (typeof item.fileIndex === 'number') ? item.fileIndex : index;
-        const localFileRef = files[targetIdx] || files[index] || null;
-        const trueFileName = item.fileName || (localFileRef ? localFileRef.name : `asset_${index}.txt`);
-        const determinedType = resolveTrueDocumentType(item.documentType, trueFileName);
+      if (!res.ok) {
+        throw new Error(data.error || 'Server processing error occurred.');
+      }
 
-        // Robust fallback key extraction lookup
-        const rawExtracted = item.extractedData || {};
-        let extractedWeight = rawExtracted.grossWeight || rawExtracted.gross_weight || rawExtracted.netWeight || rawExtracted.net_weight || '0 KG';
+      // Map backend database commit output straight to layout metrics
+      const normalized: ManifestDocExtraction[] = (data.batch || []).map((doc: any, index: number) => {
+        const extractedParams = doc.metadata?.extracted_parameters || {};
+        const trueFileName = doc.file_name || files[index]?.name || `manifest_asset_${index}.txt`;
+        const determinedType = resolveTrueDocumentType(doc.document_type, trueFileName);
 
         return {
           fileName: trueFileName,
           documentType: determinedType as any,
           extractedData: {
-            grossWeight: extractedWeight,
-            fobValue: rawExtracted.fobValue ?? null,
-            hsCode: rawExtracted.hsCode ?? 'N/A',
-            routingPoint: rawExtracted.routingPoint || 'UNKNOWN'
+            grossWeight: extractedParams.gross_weight_kg ? `${extractedParams.gross_weight_kg} KG` : '0 KG',
+            fobValue: extractedParams.total_value_usd ?? null,
+            hsCode: extractedParams.invoice_number || 'N/A',
+            routingPoint: 'LOCAL_NODE'
           }
         };
       });
@@ -322,7 +269,7 @@ OUTPUT JSON SCHEMA ONLY:
       setCurrentAction('Telemetry parsed successfully.');
       setProgress(100);
 
-      let crossManifestErrors: string[] = [];
+      let crossManifestErrors: string[] = [...(data.errors || [])];
       const outboundDocs = normalized.filter(d => String(d.documentType) === 'commercial_invoice');
       const entryBillDocs = normalized.filter(d => String(d.documentType) === 'entry_bill');
       const weighBridgeDocs = normalized.filter(d => String(d.documentType) === 'weigh_bridge_log');
@@ -352,12 +299,12 @@ OUTPUT JSON SCHEMA ONLY:
         }
       });
 
-      const finalStatus = crossManifestErrors.length ? 'flagged' : 'verified';
+      const finalStatus = data.status || (crossManifestErrors.length ? 'flagged' : 'verified');
       setStatus(finalStatus);
 
       onPipelineComplete?.(batch.id, {
         status: finalStatus,
-        confidence: crossManifestErrors.length ? 0.75 : 1.00,
+        confidence: data.confidence || (crossManifestErrors.length ? 0.75 : 1.00),
         errors: crossManifestErrors,
         files: files.map(f => f.name),
         extractions: normalized,
@@ -375,6 +322,8 @@ OUTPUT JSON SCHEMA ONLY:
 
     } catch (e: any) {
       console.error('PIPELINE FAULT:', e);
+      setCurrentAction(`Error: ${e.message || 'Pipeline process crashed.'}`);
+      setProgress(0);
     } finally {
       setIsProcessing(false);
     }
@@ -422,7 +371,6 @@ OUTPUT JSON SCHEMA ONLY:
         ))}
       </div>
 
-      {/* RAW TELEMETRY DISPLAY LAYER WITH AUDITING BASES */}
       {liveExtractedTable.length > 0 && (
         <div className="mt-5 space-y-4 border border-slate-900 bg-slate-950/20 rounded-xl p-3">
           <div className="text-[10px] font-mono tracking-wider font-bold text-slate-400 uppercase flex items-center gap-1.5 border-b border-slate-900 pb-2">
@@ -436,12 +384,13 @@ OUTPUT JSON SCHEMA ONLY:
 
               return (
                 <div key={typeKey} className="bg-[#0B0F19]/60 border border-slate-900 rounded-lg p-2.5 space-y-2">
-                  <span className={`px-2 py-0.5 rounded text-[9px] font-mono font-bold tracking-wider border ${typeKey === 'commercial_invoice' ? 'bg-blue-950/40 border-blue-900/40 text-blue-400' :
+                  <span className={`px-2 py-0.5 rounded text-[9px] font-mono font-bold tracking-wider border ${
+                    typeKey === 'commercial_invoice' ? 'bg-blue-950/40 border-blue-900/40 text-blue-400' :
                     typeKey === 'packing_list' ? 'bg-amber-950/40 border-amber-900/40 text-amber-400' :
-                      typeKey === 'entry_bill' ? 'bg-purple-950/40 border-purple-900/40 text-purple-400' :
-                        typeKey === 'weigh_bridge_log' ? 'bg-teal-950/40 border-teal-900/40 text-teal-400' :
-                          'bg-slate-900 border-slate-800 text-slate-400'
-                    }`}>
+                    typeKey === 'entry_bill' ? 'bg-purple-950/40 border-purple-900/40 text-purple-400' :
+                    typeKey === 'weigh_bridge_log' ? 'bg-teal-950/40 border-teal-900/40 text-teal-400' :
+                    'bg-slate-900 border-slate-800 text-slate-400'
+                  }`}>
                     {formatDisplayLabel(typeKey)}
                   </span>
 
@@ -503,6 +452,11 @@ OUTPUT JSON SCHEMA ONLY:
           )
         )}
       </div>
+      {currentAction && (
+        <div className="mt-2 text-[10px] font-mono text-slate-500 italic truncate">
+          Status: {currentAction}
+        </div>
+      )}
     </div>
   );
 }
