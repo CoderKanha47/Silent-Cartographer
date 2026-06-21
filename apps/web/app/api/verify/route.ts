@@ -6,7 +6,7 @@ export async function POST(request: Request) {
   try {
     const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || "https://placeholder-project.supabase.co";
     const supabaseServiceKey = process.env.SUPABASE_SERVICE_ROLE_KEY || "dummy-service-role-key";
-    
+
     // Check if we are running in production on Vercel or using a Groq key
     const groqApiKey = process.env.GROQ_API_KEY || "";
     const ollamaUrl = process.env.OLLAMA_URL || 'http://127.0.0.1:11434';
@@ -54,15 +54,15 @@ Your JSON response must match this schema structure perfectly:
           // 🌟 PRODUCTION PIPELINE: Routing to Groq cloud engine via fast LPU architectures
           const aiResponse = await fetch("https://api.groq.com/openai/v1/chat/completions", {
             method: 'POST',
-            headers: { 
+            headers: {
               'Content-Type': 'application/json',
               'Authorization': `Bearer ${groqApiKey}`
             },
             body: JSON.stringify({
-              model: "qwen-2.5-coder-32b", 
+              model: "qwen-2.5-coder-32b",
               messages: [
                 { role: "system", content: extractionPrompt },
-                { role: "user", content: `Document Text:\n${rawTextContent}` }
+                { role: "user", content: `Document Text:\n${rawTextContent}\n\nReturn your final verification output strictly as a valid JSON object matching the requested system schema.` }
               ],
               temperature: 0.0,
               response_format: { type: "json_object" }
@@ -187,7 +187,7 @@ Your JSON response must match this schema structure perfectly:
       status: ultimateStatus,
       confidence: calculatedConfidence,
       errors: systemFlags,
-      batch: UIResponseBatch 
+      batch: UIResponseBatch
     });
 
   } catch (globalError: any) {
