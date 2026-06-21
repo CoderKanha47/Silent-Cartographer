@@ -59,7 +59,7 @@ Your JSON response must match this schema structure perfectly:
               'Authorization': `Bearer ${groqApiKey}`
             },
             body: JSON.stringify({
-              model: "qwen-2.5-coder-32b",
+              model: "qwen-2.5-coder-32b-instruct",
               messages: [
                 { role: "system", content: extractionPrompt },
                 { role: "user", content: `Document Text:\n${rawTextContent}\n\nReturn your final verification output strictly as a valid JSON object matching the requested system schema.` }
