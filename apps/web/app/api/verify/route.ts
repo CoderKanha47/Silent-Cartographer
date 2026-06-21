@@ -27,17 +27,9 @@ export async function POST(request: Request) {
 
     // System Prompt containing strict structural mapping targets
     const extractionPrompt = `
-You are a precise supply-chain validation system. You must analyze the provided manifest text and respond EXCLUSIVELY with a valid JSON object.
+You are a precise supply-chain validation system. You must analyze the provided manifest text and respond EXCLUSIVELY with a valid JSON object matching the requested schema layout.
 Do not output any introductory or conversational text. 
 Do not output any Chinese characters or non-English variables under any circumstances.
-
-Your JSON response must match this schema structure perfectly:
-{
-  "document_type": "commercial_invoice" | "entry_bill" | "air_waybill" | "customs_declaration",
-  "gross_weight_kg": 0.0,
-  "total_value_usd": 0.0,
-  "invoice_number": "STRING_ID"
-}
 `;
 
     // --- STEP 1: SCAN AND EXTRACT EACH DOCUMENT ---
@@ -46,11 +38,11 @@ Your JSON response must match this schema structure perfectly:
         const bytes = await file.arrayBuffer();
         const buffer = Buffer.from(bytes);
         
-        // 💡 FIXED: Unified declaration and stripped non-printable control characters
+        // 💡 Fix: Unified variable declaration and stripped non-printable control byte sets
         let rawTextContent = buffer.toString('utf-8').replace(/[\x00-\x08\x0B\x0C\x0E-\x1F\x7F-\x9F]/g, "").trim();
 
-        // 💡 SAFE FALLBACK: If text is binary trash (like a raw PDF/Image), swap in a mock layout 
-        // to prevent Groq from panicking with a 400 schema error.
+        // 💡 Safe Fallback: If text is raw binary trash (like an image/PDF upload), swap in a mock layout
+        // to keep the Groq API from failing on malformed non-string assets during testing.
         if (!rawTextContent || rawTextContent.length < 10 || rawTextContent.includes('%PDF')) {
           rawTextContent = `
             COMMERCIAL INVOICE
@@ -65,7 +57,7 @@ Your JSON response must match this schema structure perfectly:
         let parsedData: any = null;
 
         if (isProduction) {
-          // 🌟 PRODUCTION PIPELINE: Routing to Groq cloud engine via fast LPU architectures
+          // 🌟 PRODUCTION PIPELINE: Upgraded to Groq's Strict JSON Schema Format
           const aiResponse = await fetch("https://api.groq.com/openai/v1/chat/completions", {
             method: 'POST',
             headers: {
@@ -78,12 +70,32 @@ Your JSON response must match this schema structure perfectly:
                 { role: "system", content: extractionPrompt },
                 {
                   role: "user",
-                  // 💡 Groq requirement: The word 'json' must explicitly live in the user message
-                  content: `Document Text:\n${rawTextContent}\n\nAnalyze the text above and return the output as a raw json object matching the schema structure.`
+                  content: `Document Text:\n${rawTextContent}\n\nExtract the requested fields into the specified structured format.`
                 }
               ],
               temperature: 0.0,
-              response_format: { type: "json_object" }
+              // 💡 Fix: Using explicit token-level schema constraint format to clear 400 Bad Requests
+              response_format: {
+                type: "json_schema",
+                json_schema: {
+                  name: "supply_chain_extraction",
+                  strict: true,
+                  schema: {
+                    type: "object",
+                    properties: {
+                      document_type: {
+                        type: "string",
+                        enum: ["commercial_invoice", "entry_bill", "air_waybill", "customs_declaration"]
+                      },
+                      gross_weight_kg: { type: "number" },
+                      total_value_usd: { type: "number" },
+                      invoice_number: { type: "string" }
+                    },
+                    required: ["document_type", "gross_weight_kg", "total_value_usd", "invoice_number"],
+                    additionalProperties: false
+                  }
+                }
+              }
             })
           });
 
@@ -92,7 +104,8 @@ Your JSON response must match this schema structure perfectly:
             const messageContent = rawJsonData.choices?.[0]?.message?.content || "{}";
             parsedData = JSON.parse(messageContent.trim());
           } else {
-            console.error(`Groq API returned status code: ${aiResponse.status}`);
+            const errText = await aiResponse.text();
+            console.error(`Groq API returned status code: ${aiResponse.status} - Detail: ${errText}`);
           }
 
         } else {
