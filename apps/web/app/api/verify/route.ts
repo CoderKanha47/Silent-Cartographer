@@ -27,9 +27,17 @@ export async function POST(request: Request) {
 
     // System Prompt containing strict structural mapping targets
     const extractionPrompt = `
-You are a precise supply-chain validation system. You must analyze the provided manifest text and respond EXCLUSIVELY with a valid JSON object matching the requested schema layout.
+You are a precise supply-chain validation system. You must analyze the provided manifest text and respond EXCLUSIVELY with a valid JSON object.
 Do not output any introductory or conversational text. 
 Do not output any Chinese characters or non-English variables under any circumstances.
+
+Your JSON response must match this schema structure perfectly:
+{
+  "document_type": "commercial_invoice" | "entry_bill" | "air_waybill" | "customs_declaration",
+  "gross_weight_kg": 0.0,
+  "total_value_usd": 0.0,
+  "invoice_number": "STRING_ID"
+}
 `;
 
     // --- STEP 1: SCAN AND EXTRACT EACH DOCUMENT ---
@@ -56,7 +64,7 @@ Do not output any Chinese characters or non-English variables under any circumst
         let parsedData: any = null;
 
         if (isProduction) {
-          // 🌟 PRODUCTION PIPELINE: Routing to an active Groq Production Model
+          // 🌟 PRODUCTION PIPELINE: Routing to Groq LPU with Standard JSON Mode
           const aiResponse = await fetch("https://api.groq.com/openai/v1/chat/completions", {
             method: 'POST',
             headers: {
@@ -64,37 +72,18 @@ Do not output any Chinese characters or non-English variables under any circumst
               'Authorization': `Bearer ${groqApiKey}`
             },
             body: JSON.stringify({
-              // 💡 FIXED: Switched decommissioned specdec alias to the active production model string
               model: "llama-3.3-70b-versatile",
               messages: [
                 { role: "system", content: extractionPrompt },
                 {
                   role: "user",
-                  content: `Document Text:\n${rawTextContent}\n\nExtract the requested fields into the specified structured format.`
+                  // 💡 Enforcing lowercase 'json' right here satisfies Groq's json_object validation matchers
+                  content: `Document Text:\n${rawTextContent}\n\nAnalyze the text above and return the output as a raw json object matching the requested schema layout.`
                 }
               ],
               temperature: 0.0,
-              response_format: {
-                type: "json_schema",
-                json_schema: {
-                  name: "supply_chain_extraction",
-                  strict: true,
-                  schema: {
-                    type: "object",
-                    properties: {
-                      document_type: {
-                        type: "string",
-                        enum: ["commercial_invoice", "entry_bill", "air_waybill", "customs_declaration"]
-                      },
-                      gross_weight_kg: { type: "number" },
-                      total_value_usd: { type: "number" },
-                      invoice_number: { type: "string" }
-                    },
-                    required: ["document_type", "gross_weight_kg", "total_value_usd", "invoice_number"],
-                    additionalProperties: false
-                  }
-                }
-              }
+              // 💡 FIXED: Reverted back to json_object format which llama-3.3 natively handles
+              response_format: { type: "json_object" }
             })
           });
 
