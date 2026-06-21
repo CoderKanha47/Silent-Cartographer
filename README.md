@@ -1,17 +1,17 @@
 # 🛰️ Silent Cartographer
 
-A self-contained, locally focused supply chain compliance system. **Silent Cartographer** takes in logistics documentation (invoice, manifest, bill of lading) using OCR technology and utilizes a stand-alone, local LLM to analyze the data for any discrepancies regarding the cargo's weight.
+A fully local, self-contained supply chain verification engine. Silent Cartographer ingests international logistics documentation (commercial invoices, entry bills, manifests) and uses a local LLM pipeline to cross-examine data points, catching weight, value, or tracking discrepancies instantly before they hit the ledger.
 
 ## 🚀 Key Features
 
-* **Local Inference:** Fully private document analysis utilizing Ollama and Qwen 2.5 3B. No third-party cloud API leaks.
-* **Multi-Format Ingestion:** Seamless processing of raw text, JPGs, and scanned multi-page PDFs.
-* **Deterministic Weight Verification:** Cross-references stated metrics across independent logistics sheets to detect anomalies.
-* **Containerized Infrastructure:** Unified environment orchestration managed via Docker Compose.
+* 100% Private Local Inference: Runs document extraction completely offline using Ollama and qwen2.5-coder:3b; No data ever leaves your machine.
+* In-Memory Cross-Examination: Bypasses disk-write bottlenecks by streaming file content straight into runtime memory for parallel parameter auditing.
+* Smart Discrepancy Flagging: Automatically extracts and cross-references key metrics (weights, values, reference IDs) across independent documents to catch shipping anomalies.
+* Dockerized Setup: Entire environment (frontend, database schemas, API routing) spins up locally via Docker and Supabase CLI.
 
 ## 🛠️ The Architecture
 
-[Document Ingest] ➔ [OCR Processing Layer] ➔ [Local LLM Engine] ➔ [Compliance Matrix Result]
+[Document Upload] ➔ [In-Memory Text Extraction] ➔ [Local Qwen Extraction] ➔ [Cross-Check Audit Matrix] ➔ [UI Status Dashboard]
 
 ### Tech Stack
 * **Frontend:** React, TypeScript, Tailwind CSS
