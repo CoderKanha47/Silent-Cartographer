@@ -4,10 +4,13 @@ import crypto from 'crypto';
 
 export async function POST(request: Request) {
   try {
-    // 🌟 FIXED: Added string fallbacks to guarantee TypeScript types match SDK expectations
     const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || "http://127.0.0.1:54321";
     const supabaseServiceKey = process.env.SUPABASE_SERVICE_ROLE_KEY || "";
+    
+    // Check if we are running in production on Vercel or using a Groq key
+    const groqApiKey = process.env.GROQ_API_KEY || "";
     const ollamaUrl = process.env.OLLAMA_URL || 'http://127.0.0.1:11434';
+    const isProduction = !!groqApiKey;
 
     const supabaseAdmin = createClient(supabaseUrl, supabaseServiceKey, {
       auth: { persistSession: false, autoRefreshToken: false }
@@ -22,16 +25,8 @@ export async function POST(request: Request) {
 
     const extractedBatchData: any[] = [];
 
-    // --- STEP 1: SCAN AND EXTRACT EACH DOCUMENT ---
-    for (const file of files) {
-      try {
-        const bytes = await file.arrayBuffer();
-        const buffer = Buffer.from(bytes);
-        const rawTextContent = buffer.toString('utf-8');
-
-        const mockStoragePath = `supply-chain-docs/local-sandbox-${Date.now()}-${file.name}`;
-
-        const extractionPrompt = `
+    // System Prompt containing strict structural mapping targets
+    const extractionPrompt = `
 You are a precise supply-chain validation system. You must analyze the provided manifest text and respond EXCLUSIVELY with a valid JSON object.
 Do not output any introductory or conversational text. 
 Do not output any Chinese characters or non-English variables under any circumstances.
@@ -45,41 +40,78 @@ Your JSON response must match this schema structure perfectly:
 }
 `;
 
-        const aiResponse = await fetch(`${ollamaUrl}/api/generate`, {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            model: "qwen2.5-coder:3b",
-            prompt: `Document Text:\n${rawTextContent}`,
-            system: `${extractionPrompt}\nCRITICAL: Return your response ONLY as a raw JSON array matching the required schema. Do not include markdown code blocks, backticks (\`\`\`), or extra text explanation.`,
-            stream: false,
-            format: "json",
-            options: {
+    // --- STEP 1: SCAN AND EXTRACT EACH DOCUMENT ---
+    for (const file of files) {
+      try {
+        const bytes = await file.arrayBuffer();
+        const buffer = Buffer.from(bytes);
+        const rawTextContent = buffer.toString('utf-8');
+
+        const mockStoragePath = `supply-chain-docs/local-sandbox-${Date.now()}-${file.name}`;
+        let parsedData: any = null;
+
+        if (isProduction) {
+          // 🌟 PRODUCTION PIPELINE: Routing to Groq cloud engine via fast LPU architectures
+          const aiResponse = await fetch("https://api.groq.com/openai/v1/chat/completions", {
+            method: 'POST',
+            headers: { 
+              'Content-Type': 'application/json',
+              'Authorization': `Bearer ${groqApiKey}`
+            },
+            body: JSON.stringify({
+              model: "qwen-2.5-coder-32b", 
+              messages: [
+                { role: "system", content: extractionPrompt },
+                { role: "user", content: `Document Text:\n${rawTextContent}` }
+              ],
               temperature: 0.0,
-              num_ctx: 4096,
-            }
-          })
-        });
+              response_format: { type: "json_object" }
+            })
+          });
 
-        if (aiResponse.ok) {
-          const rawJsonData = await aiResponse.json();
-          let rawText = rawJsonData.response || "";
+          if (aiResponse.ok) {
+            const rawJsonData = await aiResponse.json();
+            const messageContent = rawJsonData.choices?.[0]?.message?.content || "{}";
+            parsedData = JSON.parse(messageContent.trim());
+          } else {
+            console.error(`Groq API returned status code: ${aiResponse.status}`);
+          }
 
-          rawText = rawText.replace(/<think>[\s\S]*?<\/think>/g, "").trim();
+        } else {
+          // 🏠 LOCAL SANDBOX PIPELINE: Standard Ollama fallback execution environment
+          const aiResponse = await fetch(`${ollamaUrl}/api/generate`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              model: "qwen2.5-coder:3b",
+              prompt: `Document Text:\n${rawTextContent}`,
+              system: `${extractionPrompt}\nCRITICAL: Return your response ONLY as a raw JSON array matching the required schema. Do not include markdown code blocks or extra text explanation.`,
+              stream: false,
+              format: "json",
+              options: { temperature: 0.0, num_ctx: 4096 }
+            })
+          });
 
-          const cleanJson = rawText.replace(/^```json/, '').replace(/```$/, '').trim();
-          const parsedData = JSON.parse(cleanJson);
+          if (aiResponse.ok) {
+            const rawJsonData = await aiResponse.json();
+            let rawText = rawJsonData.response || "";
+            rawText = rawText.replace(/<think>[\s\S]*?<\/think>/g, "").trim();
+            const cleanJson = rawText.replace(/^```json/, '').replace(/```$/, '').trim();
+            parsedData = JSON.parse(cleanJson);
+          } else {
+            console.error(`Ollama returned status code: ${aiResponse.status}`);
+          }
+        }
 
+        if (parsedData) {
           extractedBatchData.push({
             fileName: file.name,
             storagePath: mockStoragePath,
             parsed: parsedData
           });
-        } else {
-          console.error(`Ollama returned status code: ${aiResponse.status}`);
         }
       } catch (err) {
-        console.error(`Ollama extraction error on ${file.name}:`, err);
+        console.error(`Extraction error on ${file.name}:`, err);
       }
     }
 
@@ -125,7 +157,6 @@ Your JSON response must match this schema structure perfectly:
     const calculatedConfidence = totalChecks > 0 ? Number((passedChecks / totalChecks).toFixed(2)) : 0.50;
     const ultimateStatus = systemFlags.length === 0 && totalChecks > 0 ? 'verified' : 'flagged';
 
-    // Construct backend payload items completely inside memory
     const UIResponseBatch = extractedBatchData.map(item => {
       const parsedInfo = item.parsed || {};
       return {
@@ -142,12 +173,12 @@ Your JSON response must match this schema structure perfectly:
       };
     });
 
-    // Background Database Attempt (Silent logging)
+    // Background Database Attempt (Fails silently without crashing runtime interface states)
     for (const item of UIResponseBatch) {
       try {
         await supabaseAdmin.from('documents').insert([item]);
       } catch (dbErr) {
-        // Suppress to prevent gateway/schema blockages from breaking engine execution
+        // Safe suppression
       }
     }
 
