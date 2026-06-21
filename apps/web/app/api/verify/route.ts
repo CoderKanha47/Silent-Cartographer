@@ -62,7 +62,11 @@ Your JSON response must match this schema structure perfectly:
               model: "llama-3.3-70b-specdec",
               messages: [
                 { role: "developer", content: extractionPrompt },
-                { role: "user", content: `Document Text:\n${rawTextContent}\n\nReturn your final verification output strictly as a valid JSON object matching the requested system schema.` }
+                {
+                  role: "user",
+                  // 💡 Fix: Enforcing lowercase 'json' inside the user string payload to satisfy Groq's validation rule
+                  content: `Document Text:\n${rawTextContent}\n\nAnalyze the text above and return the output as a raw json object.`
+                }
               ],
               temperature: 0.0,
               response_format: { type: "json_object" }
