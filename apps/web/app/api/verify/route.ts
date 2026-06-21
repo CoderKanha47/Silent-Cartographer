@@ -61,7 +61,7 @@ Your JSON response must match this schema structure perfectly:
             body: JSON.stringify({
               model: "llama-3.3-70b-specdec",
               messages: [
-                { role: "system", content: extractionPrompt },
+                { role: "developer", content: extractionPrompt },
                 { role: "user", content: `Document Text:\n${rawTextContent}\n\nReturn your final verification output strictly as a valid JSON object matching the requested system schema.` }
               ],
               temperature: 0.0,
