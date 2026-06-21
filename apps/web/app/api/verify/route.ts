@@ -4,8 +4,8 @@ import crypto from 'crypto';
 
 export async function POST(request: Request) {
   try {
-    const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || "http://127.0.0.1:54321";
-    const supabaseServiceKey = process.env.SUPABASE_SERVICE_ROLE_KEY || "";
+    const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || "https://placeholder-project.supabase.co";
+    const supabaseServiceKey = process.env.SUPABASE_SERVICE_ROLE_KEY || "dummy-service-role-key";
     
     // Check if we are running in production on Vercel or using a Groq key
     const groqApiKey = process.env.GROQ_API_KEY || "";

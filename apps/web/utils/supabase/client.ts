@@ -2,13 +2,14 @@ import { createClient } from '@supabase/supabase-js';
 
 const target = process.env.NEXT_PUBLIC_DATA_TARGET || 'local';
 
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || 'http://127.0.0.1:54321';
-const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_LOCAL_ANON_KEY || '';
+// Safe fallbacks prevent Next.js SSR compilation steps from throwing fatal exceptions
+const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || 'https://placeholder-project.supabase.co';
+const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_LOCAL_ANON_KEY || process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || 'dummy-local-anon-key';
 
-const cloudUrl = process.env.NEXT_PUBLIC_SUPABASE_CLOUD_URL || '';
-const cloudKey = process.env.NEXT_PUBLIC_SUPABASE_CLOUD_ANON_KEY || '';
+const cloudUrl = process.env.NEXT_PUBLIC_SUPABASE_CLOUD_URL || 'https://placeholder-project.supabase.co';
+const cloudKey = process.env.NEXT_PUBLIC_SUPABASE_CLOUD_ANON_KEY || 'dummy-cloud-anon-key';
 
-// Instantiate dedicated single-purpose database clients
+// Instantiate dedicated single-purpose database clients safely
 export const localClient = createClient(supabaseUrl, supabaseKey);
 export const cloudClient = createClient(cloudUrl, cloudKey);
 
