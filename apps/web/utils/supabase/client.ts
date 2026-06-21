@@ -2,14 +2,14 @@ import { createClient } from '@supabase/supabase-js';
 
 const target = process.env.NEXT_PUBLIC_DATA_TARGET || 'local';
 
-const localUrl = 'http://127.0.0.1:54321';
-const localKey = process.env.NEXT_PUBLIC_SUPABASE_LOCAL_ANON_KEY || '';
+const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || 'http://127.0.0.1:54321';
+const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_LOCAL_ANON_KEY || '';
 
 const cloudUrl = process.env.NEXT_PUBLIC_SUPABASE_CLOUD_URL || '';
 const cloudKey = process.env.NEXT_PUBLIC_SUPABASE_CLOUD_ANON_KEY || '';
 
 // Instantiate dedicated single-purpose database clients
-export const localClient = createClient(localUrl, localKey);
+export const localClient = createClient(supabaseUrl, supabaseKey);
 export const cloudClient = createClient(cloudUrl, cloudKey);
 
 // The Reader Port adapts instantly based on your .env toggle
